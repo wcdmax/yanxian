@@ -1,0 +1,25 @@
+@import "uikit.min.css";
+@import "swiper-bundle.min.css";
+
+:root {
+    --theme-color: #214e91;
+}
+
+body {
+    background-color: #f6f8f9;
+}
+
+/* 导航栏 */
+.yx-navbar-nav li a {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.yx-navbar-container {
+    background-color: white;
+}
+
+.yx-navbar-nav li a:hover {
+    color: var(--theme-color);
+}
