@@ -89,7 +89,20 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+/**
+ * Memcached Configuration
+ */
+define( 'WP_CACHE', true );
+define( 'WP_CACHE_KEY_SALT', 'yanxian_' );
 
+// Memcached server configuration
+global $memcached_servers;
+$memcached_servers = array(
+    array(
+        '127.0.0.1',
+        11211
+    )
+);
 
 /* That's all, stop editing! Happy publishing. */
 
