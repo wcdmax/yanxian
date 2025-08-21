@@ -66,3 +66,9 @@ body {
     background: var(--theme-color);
     transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
 }
+
+/* 首页轮播图 */
+#main-slide {
+    --swiper-theme-color: white;
+    --swiper-navigation-size: 26px;
+}
