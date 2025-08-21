@@ -30,7 +30,7 @@
                     <li class="uk-active"><a href="#">首页</a></li>
                     <li>
                         <a href="#">产品中心<span uk-navbar-parent-icon></span></a>
-                        <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 700">
+                        <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 500">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li><a href="#">工控一体机</a></li>
                                 <li><a href="#">工业显示器</a></li>
@@ -41,7 +41,7 @@
                     </li>
                     <li>
                         <a href="#">解决方案<span uk-navbar-parent-icon></span></a>
-                        <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 700">
+                        <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 500">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li><a href="#">智能制造</a></li>
                                 <li><a href="#">医疗政务</a></li>
