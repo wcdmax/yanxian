@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="yx-navbar-container">
+    <header class="yx-navbar-container" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
         <nav uk-navbar class="uk-container uk-container-large">
             <div class="uk-navbar-left">
                 <a href="/" class="uk-logo uk-navbar-item">
@@ -28,8 +28,27 @@
             <div class="uk-navbar-center">
                 <ul class="uk-navbar-nav yx-navbar-nav">
                     <li class="uk-active"><a href="#">首页</a></li>
-                    <li><a href="#">产品中心</a></li>
-                    <li><a href="#">解决方案</a></li>
+                    <li>
+                        <a href="#">产品中心<span uk-navbar-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 700">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">工控一体机</a></li>
+                                <li><a href="#">工业显示器</a></li>
+                                <li><a href="#">工业触摸屏</a></li>
+                                <li><a href="#">工业平板电脑</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">解决方案<span uk-navbar-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 700">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">智能制造</a></li>
+                                <li><a href="#">医疗政务</a></li>
+                                <li><a href="#">酒店餐饮</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="#">样机借测</a></li>
                     <li><a href="#">关于我们</a></li>
                     <li><a href="#">联系我们</a></li>

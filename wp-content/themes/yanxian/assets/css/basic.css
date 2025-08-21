@@ -10,10 +10,27 @@ body {
 }
 
 /* 导航栏 */
+.yx-navbar-nav {
+    gap: 40px;
+}
+
 .yx-navbar-nav li a {
     color: #333;
     font-size: 16px;
-    text-decoration: none;
+}
+
+.yx-navbar-nav .uk-dropdown {
+    min-width: unset;
+}
+
+.yx-navbar-dropdown {
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.yx-navbar-nav>li {
+    position: relative;
 }
 
 .yx-navbar-container {
@@ -22,4 +39,30 @@ body {
 
 .yx-navbar-nav li a:hover {
     color: var(--theme-color);
+}
+
+.yx-navbar-nav>li.uk-active>a {
+    color: var(--theme-color);
+}
+
+.yx-navbar-nav>li:hover::after,
+.yx-navbar-nav>li.uk-active::after {
+    transform: scaleX(1);
+}
+
+.yx-navbar-nav>li::after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 3px;
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 2px;
+    transform: scaleX(0);
+    pointer-events: none;
+    transform-origin: center;
+    background: var(--theme-color);
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
 }
