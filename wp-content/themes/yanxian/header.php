@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="yx-navbar-container" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <header class="yx-navbar-container" uk-sticky="sel-target: .yx-navbar-container; cls-active: uk-navbar-sticky">
         <nav uk-navbar class="uk-container uk-container-large">
             <div class="uk-navbar-left">
                 <a href="/" class="uk-logo uk-navbar-item">
