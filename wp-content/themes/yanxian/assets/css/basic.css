@@ -33,10 +33,6 @@ body {
     position: relative;
 }
 
-.yx-navbar-container {
-    background-color: white;
-}
-
 .yx-navbar-nav li a:hover {
     color: var(--theme-color);
 }
