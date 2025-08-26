@@ -24,6 +24,10 @@ body {
     min-width: unset;
 }
 
+.uk-light .uk-logo {
+    filter: brightness(0) invert(1);
+}
+
 .yx-navbar-dropdown li>a {
     color: var(--text-color-default);
 }
