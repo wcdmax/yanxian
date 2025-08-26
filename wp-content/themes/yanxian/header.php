@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<?php echo get_theme_file_uri('/assets/css/basic.css'); ?>">
     <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/basic.js'); ?>"></script>
     <?php if (is_front_page()): ?>
-    <script type="text/javascript" language="javascript" src="<?php echo get_theme_file_uri('/assets/js/index.js'); ?>"></script>
+        <script type="text/javascript" language="javascript" src="<?php echo get_theme_file_uri('/assets/js/index.js'); ?>"></script>
     <?php endif; ?>
     <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/uikit.min.js'); ?>"></script>
     <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/swiper-bundle.min.js'); ?>"></script>
@@ -18,48 +18,52 @@
 </head>
 
 <body>
-    <header class="yx-navbar-container" uk-sticky="sel-target: .yx-navbar-container; cls-active: uk-navbar-sticky">
-        <nav uk-navbar class="uk-container uk-container-large">
-            <div class="uk-navbar-left">
-                <a href="/" class="uk-logo uk-navbar-item">
-                    <img alt="研显触控" title="研显触控" src="<?php echo get_theme_file_uri('/assets/icons/logo.png'); ?>">
-                </a>
-            </div>
-            <div class="uk-navbar-center">
-                <ul class="uk-navbar-nav yx-navbar-nav">
-                    <li class="uk-active"><a href="#">首页</a></li>
-                    <li>
-                        <a href="#">产品中心<span uk-navbar-parent-icon></span></a>
-                        <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 500">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="#">工控一体机</a></li>
-                                <li><a href="#">工业显示器</a></li>
-                                <li><a href="#">工业触摸屏</a></li>
-                                <li><a href="#">工业平板电脑</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">解决方案<span uk-navbar-parent-icon></span></a>
-                        <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 500">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="#">智能制造</a></li>
-                                <li><a href="#">医疗政务</a></li>
-                                <li><a href="#">酒店餐饮</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">样机借测</a></li>
-                    <li><a href="#">关于我们</a></li>
-                    <li><a href="#">联系我们</a></li>
-                    <li><a href="#">服务与支持</a></li>
-                </ul>
-            </div>
-            <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav yx-navbar-nav">
-                    <li><a href="#" class="uk-navbar-item">登录</a></li>
-                    <li><a href="#" class="uk-navbar-item">注册</a></li>
-                </ul>
+    <header class="uk-position-top" uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-light uk-navbar-transparent; end: ! *;">
+        <nav class="uk-light uk-navbar-container">
+            <div class="uk-container uk-container-large">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a href="/" class="uk-logo uk-navbar-item">
+                            <img alt="研显触控" title="研显触控" src="<?php echo get_theme_file_uri('/assets/icons/logo.png'); ?>">
+                        </a>
+                    </div>
+                    <div class="uk-navbar-center">
+                        <ul class="uk-navbar-nav yx-navbar-nav">
+                            <li class="uk-active"><a href="#">首页</a></li>
+                            <li>
+                                <a href="#">产品中心<span uk-navbar-parent-icon></span></a>
+                                <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 500">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">工控一体机</a></li>
+                                        <li><a href="#">工业显示器</a></li>
+                                        <li><a href="#">工业触摸屏</a></li>
+                                        <li><a href="#">工业平板电脑</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">解决方案<span uk-navbar-parent-icon></span></a>
+                                <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 500">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">智能制造</a></li>
+                                        <li><a href="#">医疗政务</a></li>
+                                        <li><a href="#">酒店餐饮</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">样机借测</a></li>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">服务与支持</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav yx-navbar-nav">
+                            <li><a href="#" class="uk-navbar-item">登录</a></li>
+                            <li><a href="#" class="uk-navbar-item">注册</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
