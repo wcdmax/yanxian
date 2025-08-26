@@ -13,6 +13,7 @@
         <script type="text/javascript" language="javascript" src="<?php echo get_theme_file_uri('/assets/js/index.js'); ?>"></script>
     <?php endif; ?>
     <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/uikit.min.js'); ?>"></script>
+    <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/uikit-icons.min.js'); ?>"></script>
     <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/swiper-bundle.min.js'); ?>"></script>
     <?php wp_head(); ?>
 </head>
