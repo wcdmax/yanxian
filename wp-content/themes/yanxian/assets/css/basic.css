@@ -98,10 +98,104 @@ body {
 
 /* 首页轮播图 */
 #main-slide {
-    --swiper-theme-color: white;
     --swiper-navigation-size: 26px;
+    --swiper-navigation-color: #fff;
+    --swiper-pagination-bullet-width: 30px;
+    --swiper-pagination-bullet-height: 2px;
+    --swiper-pagination-bullet-border-radius: 0;
+    --swiper-pagination-color: rgba(0, 0, 0, 0.3);
+    --swiper-pagination-bullet-inactive-opacity: 0.3;
 }
 
-#main-slide .swiper-wrapper .swiper-slide img {
+.yx-main-slide-caption {
+    width: 80%;
+    height: 85px;
+}
+
+.yx-swiper-scroll-down>* {
+    color: white;
+}
+
+#main-slide .swiper-pagination {
+    position: relative;
+}
+
+#main-slide .swiper-slide img {
     height: 100vh;
+}
+
+#main-slide .swiper-button-prev {
+    left: unset;
+    right: 60px;
+}
+
+#main-slide .swiper-pagination-bullets {
+    top: unset;
+    width: auto;
+    bottom: unset;
+}
+
+#main-slide .swiper-button-next::after,
+#main-slide .swiper-button-prev::after {
+    transition: all 0.3s ease-in-out;
+}
+
+#main-slide .swiper-button-prev:hover:after,
+#main-slide .swiper-button-next:hover:after {
+    transform: scale(1.1);
+}
+
+/* 分页按钮激活状态动画 */
+@keyframes bulletProgress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+#main-slide .swiper-pagination-bullet-active {
+    overflow: hidden;
+    position: relative;
+}
+
+#main-slide .swiper-pagination-bullet-active::after {
+    top: 0;
+    left: 0;
+    width: 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    animation: bulletProgress 5s linear forwards;
+}
+
+/* Scroll Down 动画效果 */
+.yx-swiper-scroll-down {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.yx-swiper-scroll-down:hover {
+    opacity: 0.8;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.yx-swiper-scroll-down span {
+    animation: jump 2s ease-in-out infinite;
 }
