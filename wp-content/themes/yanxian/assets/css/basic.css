@@ -3,6 +3,8 @@
 
 :root {
     --theme-color: #214e91;
+    --text-color-default: #11192d;
+    --text-color-primary: var(--theme-color);
 }
 
 body {
@@ -15,12 +17,15 @@ body {
 }
 
 .yx-navbar-nav li a {
-    color: #333;
     font-size: 16px;
 }
 
 .yx-navbar-nav .uk-dropdown {
     min-width: unset;
+}
+
+.yx-navbar-dropdown li>a {
+    color: var(--text-color-default);
 }
 
 .yx-navbar-dropdown {
@@ -33,17 +38,42 @@ body {
     position: relative;
 }
 
-.yx-navbar-nav li a:hover {
-    color: var(--theme-color);
-}
-
-.yx-navbar-nav>li.uk-active>a {
-    color: var(--theme-color);
-}
-
 .yx-navbar-nav>li:hover::after,
 .yx-navbar-nav>li.uk-active::after {
     transform: scaleX(1);
+}
+
+.uk-light .yx-navbar-nav>li>a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.uk-light .yx-navbar-nav>li::after {
+    background: rgba(255, 255, 255, 1);
+}
+
+.uk-light .yx-navbar-nav>li>a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.uk-navbar-sticky .yx-navbar-nav>li>a {
+    color: var(--text-color-default);
+}
+
+.uk-navbar-sticky .yx-navbar-nav>li::after {
+    background: var(--text-color-primary);
+}
+
+.uk-navbar-sticky .yx-navbar-nav>li>a:hover {
+    color: var(--text-color-primary);
+}
+
+.uk-navbar-sticky .yx-navbar-nav>li.uk-active>a {
+    color: var(--text-color-primary);
+}
+
+.yx-navbar-dropdown .uk-navbar-dropdown-nav>li:hover>a,
+.yx-navbar-dropdown .uk-navbar-dropdown-nav>li.uk-active>a {
+    color: var(--text-color-primary);
 }
 
 .yx-navbar-nav>li::after {
@@ -59,7 +89,6 @@ body {
     transform: scaleX(0);
     pointer-events: none;
     transform-origin: center;
-    background: var(--theme-color);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
