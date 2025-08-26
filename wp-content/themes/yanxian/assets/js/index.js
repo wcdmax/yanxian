@@ -17,4 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.swiper-button-prev',
         },
     });
+
+    // Scroll Down 功能
+    const scrollDownElement = document.querySelector('.yx-swiper-scroll-down');
+    if (scrollDownElement) {
+        scrollDownElement.addEventListener('click', function () {
+            const viewportHeight = window.innerHeight;
+            window.scrollTo({
+                top: viewportHeight,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
