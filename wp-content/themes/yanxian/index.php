@@ -2,16 +2,16 @@
 <div class="swiper" id="main-slide">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.jpg" alt="Slide 1">
+            <img alt="Slide 1" src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.jpg">
         </div>
         <div class="swiper-slide">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide2.jpg" alt="Slide 2">
+            <img alt="Slide 2" src="<?php echo get_template_directory_uri(); ?>/assets/images/slide2.jpg">
         </div>
         <div class="swiper-slide">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide3.jpg" alt="Slide 3">
+            <img alt="Slide 3" src="<?php echo get_template_directory_uri(); ?>/assets/images/slide3.jpg">
         </div>
         <div class="swiper-slide">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide4.jpg" alt="Slide 4">
+            <img alt="Slide 4" src="<?php echo get_template_directory_uri(); ?>/assets/images/slide4.jpg">
         </div>
     </div>
     <div class="swiper-pagination"></div>
