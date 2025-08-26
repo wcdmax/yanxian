@@ -24,7 +24,7 @@ body {
     min-width: unset;
 }
 
-.uk-light .uk-logo {
+.uk-light .uk-logo>img {
     filter: brightness(0) invert(1);
 }
 
