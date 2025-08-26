@@ -14,9 +14,17 @@
             <img alt="Slide 4" src="<?php echo get_template_directory_uri(); ?>/assets/images/slide4.jpg">
         </div>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="uk-flex uk-flex-between uk-flex-middle uk-position-medium yx-main-slide-caption uk-position-bottom-center uk-position-z-index-high">
+        <div class="swiper-pagination"></div>
+        <div class="uk-text-center yx-swiper-scroll-down">
+            <h4 class="uk-margin-remove">Scroll Down</h4>
+            <span uk-icon="ratio: 2; icon: chevron-down"></span>
+        </div>
+        <div class="uk-position-relative swiper-button-container">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
 </div>
 <section class="uk-section">
     <div class="uk-container uk-container-large">
