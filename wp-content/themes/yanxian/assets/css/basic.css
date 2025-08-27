@@ -5,10 +5,24 @@
     --theme-color: #214e91;
     --text-color-default: #11192d;
     --text-color-primary: var(--theme-color);
+    --yx-box-shadow: 0 4px 24px rgba(33, 78, 145, 0.35);
+    --yx-linear-gradient: linear-gradient(90deg, #214e91 0%, #3a7bd5 100%);
+    --yx-linear-hover-gradient: linear-gradient(90deg, #3a7bd5 0%, #214e91 100%);
 }
 
 body {
     background-color: #f6f8f9;
+}
+
+.yx-button-primary {
+    color: white;
+    background: var(--yx-linear-gradient);
+}
+
+.yx-button-primary:hover {
+    color: white;
+    box-shadow: var(--yx-box-shadow);
+    background: var(--yx-linear-hover-gradient);
 }
 
 /* 导航栏 */
@@ -213,4 +227,43 @@ body {
 
 .yx-swiper-scroll-down svg {
     animation: jump 2s ease-in-out infinite;
+}
+
+/* 产品中心 */
+.yx-card-body {
+    height: 390px;
+    border-radius: 20px;
+}
+
+.yx-card-title {
+    text-align: center;
+}
+
+.yx-card-title>* {
+    margin: unset;
+}
+
+.yx-card-image {
+    overflow: hidden;
+}
+
+.yx-card-title p {
+    color: var(--text-color-primary);
+}
+
+.yx-card-image img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.yx-card-category:hover .yx-card-image img {
+    transform: scale(1.05, 1.05);
+}
+
+.yx-card-category:hover {
+    box-shadow: 0 15px 35px rgba(159, 198, 237, 0.4), 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.yx-card-category {
+    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(184, 212, 241, 0.8) 0%, rgba(159, 198, 237, 0.8) 50%, rgba(134, 184, 233, 0.8) 100%);
 }

@@ -29,10 +29,67 @@
         </div>
     </div>
 </div>
-<section class="uk-section">
+<section class="uk-section uk-background-top-left" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/bg-product.jpg'); ?>');">
     <div class="uk-container uk-container-large">
-        <h2 class="uk-section-title">欢迎来到研显触控</h2>
-        <p>我们专注于提供高质量的工业触摸屏解决方案。</p>
+        <h2 class="uk-section-title">产品中心</h2>
+        <p>源头厂家，提供全方位多行业定制方案，满足您的各种需求</p>
+        <div uk-grid class="uk-grid-small uk-grid-match">
+            <div class="uk-width-2-3">
+                <div class="uk-card yx-card-body uk-card-hover uk-card-default uk-overflow-hidden uk-background-norepeat" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/provide_customized.png'); ?>');">
+                    <div class="uk-position-medium uk-position-center-right">
+                        <h3>Provide customized<br>
+                            services for customers</h3>
+                        <h3 class="uk-margin-remove">为客户提供个性化定制服务</h3>
+                        <p class="uk-text-meta">工控一体机、工业显示器、工业触摸屏、商用广告机、工业平板电脑...</p>
+                        <a class="uk-button uk-border-pill yx-button-primary" href="#">联系我们</a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3">
+                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
+                    <div class="yx-card-title">
+                        <h3>工控一体机</h3>
+                        <p>Industrial All in One PC</p>
+                    </div>
+                    <div class="yx-card-image">
+                        <img alt="工控一体机" src="<?php echo get_theme_file_uri('/assets/images/g1a.png'); ?>">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3">
+                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
+                    <div class="yx-card-title">
+                        <h3>工业触摸屏</h3>
+                        <p>Industrial Display</p>
+                    </div>
+                    <div class="yx-card-image">
+                        <img alt="工业触摸屏" src="<?php echo get_theme_file_uri('/assets/images/g1a.png'); ?>">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3">
+                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
+                    <div class="yx-card-title">
+                        <h3>商用广告机</h3>
+                        <p>Commercial Advertising Machine</p>
+                    </div>
+                    <div class="yx-card-image">
+                        <img alt="商用广告机" src="<?php echo get_theme_file_uri('/assets/images/g1a.png'); ?>">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3">
+                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
+                    <div class="yx-card-title">
+                        <h3>工业平板电脑</h3>
+                        <p>Industrial Tablet PC</p>
+                    </div>
+                    <div class="yx-card-image">
+                        <img alt="工业平板电脑" src="<?php echo get_theme_file_uri('/assets/images/g1a.png'); ?>">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <?php get_footer(); ?>
