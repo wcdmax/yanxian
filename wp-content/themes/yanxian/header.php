@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="uk-position-top" uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-light uk-navbar-transparent; end: ! *;">
+    <header class="uk-position-top yx-navbar-header" uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-light uk-navbar-transparent; end: ! *;">
         <nav class="uk-navbar-container">
             <div class="uk-container uk-container-large">
                 <div uk-navbar>

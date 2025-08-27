@@ -80,6 +80,13 @@ body {
     color: var(--text-color-primary);
 }
 
+.yx-navbar-header .uk-navbar-sticky {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
 .yx-navbar-nav>li::after {
     left: 0;
     right: 0;
