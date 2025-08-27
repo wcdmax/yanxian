@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
         speed: 2000,
         effect: 'fade',
         autoplay: false,
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
         pagination: {
             clickable: true,
             el: '.swiper-pagination',
