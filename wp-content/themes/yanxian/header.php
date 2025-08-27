@@ -36,8 +36,8 @@
                                 <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 500">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li><a href="#">工控一体机</a></li>
-                                        <li><a href="#">工业显示器</a></li>
                                         <li><a href="#">工业触摸屏</a></li>
+                                        <li><a href="#">商用广告机</a></li>
                                         <li><a href="#">工业平板电脑</a></li>
                                     </ul>
                                 </div>
