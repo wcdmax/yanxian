@@ -281,6 +281,16 @@ body {
     overflow: hidden;
 }
 
+.yx-prod-system {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.yx-card-title h3,
+.yx-card-customized h3 {
+    color: var(--text-color-default);
+}
+
 .yx-card-title p {
     color: var(--text-color-primary);
 }

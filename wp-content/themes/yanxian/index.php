@@ -36,11 +36,11 @@
         <div uk-grid class="uk-grid-small uk-grid-match">
             <div class="uk-width-2-3">
                 <div class="uk-card yx-card-body uk-card-hover uk-card-default uk-overflow-hidden uk-background-norepeat" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/provide_customized.png'); ?>');">
-                    <div class="uk-position-medium uk-position-center-right">
+                    <div class="uk-position-medium yx-card-customized uk-position-center-right">
                         <h3>Provide customized<br>
                             services for customers</h3>
                         <h3 class="uk-margin-remove">为客户提供个性化定制服务</h3>
-                        <p class="uk-text-meta">工控一体机、工业显示器、工业触摸屏、商用广告机、工业平板电脑...</p>
+                        <p class="uk-text-meta">屏幕尺寸、接口模块、安装方式、硬件配置、OEM/ODM...</p>
                         <a class="uk-button uk-border-pill yx-button-primary" href="#">联系我们</a>
                     </div>
                 </div>
@@ -86,6 +86,40 @@
                     </div>
                     <div class="yx-card-image">
                         <img alt="工业平板电脑" src="<?php echo get_theme_file_uri('/assets/images/g1a.png'); ?>">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand">
+                <div class="uk-padding yx-prod-system uk-background-default">
+                    <div uk-grid class="uk-grid-small uk-grid-match uk-child-width-1-4">
+                        <div>
+                            <div class="uk-card uk-card-body uk-text-center">
+                                <img alt="安卓系统" src="<?php echo get_theme_file_uri('/assets/icons/android.png'); ?>">
+                                <h5 class="uk-margin-small-top uk-margin-remove-bottom">安卓系统</h5>
+                                <small>Android 9/Android 10/ Android 11</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-body uk-text-center">
+                                <img alt="Windows系统" src="<?php echo get_theme_file_uri('/assets/icons/windows.png'); ?>">
+                                <h5 class="uk-margin-small-top uk-margin-remove-bottom">Windows</h5>
+                                <small>Windows 7/Windows 10/Windows 11</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-body uk-text-center">
+                                <img alt="安卓系统" src="<?php echo get_theme_file_uri('/assets/icons/linux.png'); ?>">
+                                <h5 class="uk-margin-small-top uk-margin-remove-bottom">Linux系统</h5>
+                                <small>统信OS/Ubuntu/麒麟系统/鸿蒙系统</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-body uk-text-center">
+                                <img alt="其它系统" src="<?php echo get_theme_file_uri('/assets/icons/other.png'); ?>">
+                                <h5 class="uk-margin-small-top uk-margin-remove-bottom">其它系统</h5>
+                                <small>支持安装其它操作系统</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
