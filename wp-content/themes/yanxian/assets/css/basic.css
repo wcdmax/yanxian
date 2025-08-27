@@ -16,6 +16,7 @@ body {
 
 .yx-button-primary:hover {
     color: white;
+    box-shadow: var(--yx-box-shadow);
 }
 
 .yx-button-primary {
