@@ -1,6 +1,10 @@
 @import "uikit.min.css";
 @import "swiper-bundle.min.css";
 
+body {
+    background-color: #f6f8f9;
+}
+
 :root {
     --theme-color: #214e91;
     --text-color-default: #11192d;
@@ -10,19 +14,48 @@
     --yx-linear-hover-gradient: linear-gradient(90deg, #3a7bd5 0%, #214e91 100%);
 }
 
-body {
-    background-color: #f6f8f9;
+.yx-button-primary:hover {
+    color: white;
 }
 
 .yx-button-primary {
     color: white;
+    overflow: hidden;
+    position: relative;
     background: var(--yx-linear-gradient);
 }
 
-.yx-button-primary:hover {
-    color: white;
-    box-shadow: var(--yx-box-shadow);
-    background: var(--yx-linear-hover-gradient);
+.yx-button-primary:hover::before {
+    z-index: 1;
+    animation: btn-wave 1.5s infinite;
+}
+
+.yx-button-primary::before {
+    top: 50%;
+    height: 0;
+    left: 50%;
+    width: 100%;
+    content: "";
+    display: block;
+    padding-top: 100%;
+    border-radius: 50%;
+    position: absolute;
+    transition: all .6s;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes btn-wave {
+    0% {
+        background: rgba(0, 0, 0, .25);
+        transform: translateX(-50%) translateY(-50%) scale(0);
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(0);
+    }
+
+    to {
+        background: transparent;
+        transform: translateX(-50%) translateY(-50%) scale(1);
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+    }
 }
 
 /* 导航栏 */
