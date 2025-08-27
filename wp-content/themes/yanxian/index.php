@@ -29,10 +29,11 @@
         </div>
     </div>
 </div>
+<!-- 产品中心 Start -->
 <section class="uk-section uk-background-top-left" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/bg-product.jpg'); ?>');">
     <div class="uk-container uk-container-large">
         <h2 class="uk-section-title">产品中心</h2>
-        <p>源头厂家，提供全方位多行业定制方案，满足您的各种需求</p>
+        <p class="uk-section-title-desc">源头厂家，提供全方位多行业定制方案，满足您的各种需求</p>
         <div uk-grid class="uk-grid-small uk-grid-match">
             <div class="uk-width-2-3">
                 <div class="uk-card yx-card-body uk-card-hover uk-card-default uk-overflow-hidden uk-background-norepeat" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/provide_customized.png'); ?>');">
@@ -126,4 +127,39 @@
         </div>
     </div>
 </section>
+<!-- 产品中心 End -->
+<!-- 解决方案 Start -->
+<section class="uk-section">
+    <div class="uk-container uk-container-large">
+        <h2 class="uk-section-title">解决方案</h2>
+        <p class="uk-section-title-desc">以技术为驱动，提供成熟的行业解决方案，500强信赖的工控品牌</p>
+        <ul class="uk-flex yx-solution-list">
+            <li class="active yx-solution-item uk-background-cover" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/5770c.jpg') ?>);">
+                <div class="yx-solution-item-info">
+                    <h3>智能制造</h3>
+                    <p>基于大数据和人工智能的智能制造解决方案，助力工厂提高生产效率</p>
+                </div>
+            </li>
+            <li class="yx-solution-item uk-background-cover" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/54878.jpg') ?>);">
+                <div class="yx-solution-item-info">
+                    <h3>医疗政务</h3>
+                    <p>为医疗政务提供智能化设备和系统，提升医疗服务质量和效率</p>
+                </div>
+            </li>
+            <li class="yx-solution-item uk-background-cover" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/74105.jpg') ?>);">
+                <div class="yx-solution-item-info">
+                    <h3>酒店餐饮</h3>
+                    <p>为酒店餐饮行业提供智能化设备和系统，提升服务质量和运营效率</p>
+                </div>
+            </li>
+            <li class="yx-solution-item uk-background-cover" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/f2b44.jpg') ?>);">
+                <div class="yx-solution-item-info">
+                    <h3>交通枢纽</h3>
+                    <p>为交通枢纽提供智能化设备和系统，提升运输效率和安全性</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- 解决方案 End -->
 <?php get_footer(); ?>

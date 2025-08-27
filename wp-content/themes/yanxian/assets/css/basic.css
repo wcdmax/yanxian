@@ -311,3 +311,47 @@ body {
     backdrop-filter: blur(10px);
     background: linear-gradient(135deg, rgba(184, 212, 241, 0.8) 0%, rgba(159, 198, 237, 0.8) 50%, rgba(134, 184, 233, 0.8) 100%);
 }
+
+/* 解决方案 */
+.yx-solution-list {
+    gap: 10px;
+    padding: unset;
+    list-style-type: none;
+}
+
+.yx-solution-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.yx-solution-list li {
+    width: 200px;
+    height: 600px;
+}
+
+.yx-solution-item-info p {
+    display: none;
+}
+
+.yx-solution-item-info>* {
+    color: white;
+}
+
+.yx-solution-list .active {
+    width: calc(100% - 630px);
+}
+
+.yx-solution-list .active .yx-solution-item-info p {
+    display: block;
+}
+
+.yx-solution-item-info {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    padding: 10% 30px 30px;
+    background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .8) 90%);
+}

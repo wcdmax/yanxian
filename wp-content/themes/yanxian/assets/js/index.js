@@ -29,4 +29,22 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
+
+    // 解决方案列表鼠标悬停效果
+    const solutionList = document.querySelector('.yx-solution-list');
+    if (solutionList) {
+        const solutionItems = solutionList.querySelectorAll('.yx-solution-item');
+
+        solutionItems.forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                // 移除所有其他项的 active 类
+                solutionItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+
+                // 为当前悬停项添加 active 类
+                this.classList.add('active');
+            });
+        });
+    }
 });
