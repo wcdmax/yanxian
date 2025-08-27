@@ -16,9 +16,12 @@
     </div>
     <div class="uk-flex uk-flex-between uk-flex-middle uk-position-medium yx-main-slide-caption uk-position-bottom-center uk-position-z-index-high">
         <div class="swiper-pagination"></div>
-        <div class="uk-text-center yx-swiper-scroll-down">
+        <div class="uk-flex uk-flex-column uk-flex-center uk-flex-middle yx-swiper-scroll-down uk-position-center-horizontal">
             <h4 class="uk-margin-remove">Scroll Down</h4>
-            <span uk-icon="ratio: 2; icon: chevron-down"></span>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 16L20 24L28 16" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 9L20 17L28 9" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
         </div>
         <div class="uk-position-relative swiper-button-container">
             <div class="swiper-button-prev"></div>

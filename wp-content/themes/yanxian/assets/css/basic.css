@@ -100,7 +100,7 @@ body {
 #main-slide {
     --swiper-navigation-size: 26px;
     --swiper-navigation-color: #fff;
-    --swiper-pagination-bullet-width: 30px;
+    --swiper-pagination-bullet-width: 50px;
     --swiper-pagination-bullet-height: 2px;
     --swiper-pagination-bullet-border-radius: 0;
     --swiper-pagination-color: rgba(0, 0, 0, 0.3);
@@ -196,6 +196,6 @@ body {
     }
 }
 
-.yx-swiper-scroll-down span {
+.yx-swiper-scroll-down svg {
     animation: jump 2s ease-in-out infinite;
 }
