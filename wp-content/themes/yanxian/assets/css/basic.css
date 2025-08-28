@@ -10,8 +10,8 @@ body {
     --text-color-default: #11192d;
     --text-color-primary: var(--theme-color);
     --yx-box-shadow: 0 4px 24px rgba(33, 78, 145, 0.35);
-    --yx-linear-gradient: linear-gradient(90deg, #214e91 0%, #3a7bd5 100%);
-    --yx-linear-hover-gradient: linear-gradient(90deg, #3a7bd5 0%, #214e91 100%);
+    --yx-linear-gradient: linear-gradient(90deg, #3a7bd5 0%, #214e91 100%);
+    --yx-linear-hover-gradient: linear-gradient(90deg, #214e91 0%, #3a7bd5 100%);
 }
 
 .yx-button-primary:hover {
@@ -418,4 +418,121 @@ body {
 .yx-about-section {
     position: relative;
     background: linear-gradient(to bottom, #f2f8fb, #e2f1f5);
+}
+
+/* 关于我们数据展示区域 */
+.yx-about-list {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.yx-about-list .yx-about-item {
+    padding: 30px 10px;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(246, 248, 249, 0.9) 100%);
+}
+
+.yx-about-list .yx-about-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(33, 78, 145, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(246, 248, 249, 1) 100%);
+}
+
+.yx-about-list .yx-about-item h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    background: var(--yx-linear-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: numberPulse 2s ease-in-out infinite;
+}
+
+.yx-about-list .yx-about-item h2::after {
+    font-weight: bold;
+    color: var(--text-color-primary);
+    animation: plusRotate 3s ease-in-out infinite;
+}
+
+.yx-about-list .yx-about-item span {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--text-color-default);
+}
+
+.yx-about-list .yx-about-item:hover h2 {
+    animation: numberScale 0.6s ease;
+}
+
+/* 数字动画效果 */
+@keyframes numberPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes numberScale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes plusRotate {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+/* 渐入动画 */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.yx-about-list .yx-about-item {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.yx-about-list .yx-about-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.yx-about-list .yx-about-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.yx-about-list .yx-about-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.yx-about-list .yx-about-item:nth-child(4) {
+    animation-delay: 0.4s;
 }
