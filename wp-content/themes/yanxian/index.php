@@ -34,6 +34,7 @@
     <div class="uk-container uk-container-large">
         <h2 class="uk-section-title">产品中心</h2>
         <p class="uk-section-title-desc">源头厂家，提供全方位多行业定制方案，满足您的各种需求</p>
+        <hr>
         <div uk-grid class="uk-grid-small uk-grid-match">
             <div class="uk-width-2-3">
                 <div class="uk-card yx-card-body uk-card-hover uk-card-default uk-overflow-hidden uk-background-norepeat" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/provide_customized.png'); ?>');">
@@ -133,6 +134,7 @@
     <div class="uk-container uk-container-large">
         <h2 class="uk-section-title">解决方案</h2>
         <p class="uk-section-title-desc">以技术为驱动，提供成熟的行业解决方案，500强信赖的工控品牌</p>
+        <hr>
         <ul class="uk-flex yx-solution-list">
             <li class="active yx-solution-item uk-background-cover" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/5770c.jpg') ?>);">
                 <div class="yx-solution-item-info">
@@ -168,7 +170,7 @@
         <div uk-grid class="uk-grid-small uk-grid-match">
             <div class="uk-width-3-5">
                 <div class="yx-about-content">
-                    <h1>关于研显触控</h1>
+                    <h2>关于研显触控</h2>
                     <h4>专注工业显控设备，提供全方位定制方案</h4>
                     <p>深圳市研显触控科技有限公司是一家专注于工业互联网领域的高新技术企业，集研发、生产、销售和服务于一体。公司主营工业一体机、工业触摸屏、工业平板电脑、商用广告机等智能终端设备，广泛应用于智能制造、医疗政务、酒店餐饮、交通枢纽、智慧零售、教育、金融等多个行业领域。我们拥有自主研发团队和现代化生产基地，具备强大的产品定制能力，能够根据客户需求提供屏幕尺寸、接口模块、安装方式、硬件配置等多维度的个性化定制服务，支持OEM/ODM合作模式，满足不同行业客户的多样化应用场景。</p>
                     <p>公司始终坚持以技术创新为核心驱动力，拥有一支高素质的软硬件研发团队。我们通过严格的质量管理体系，确保每一台设备的高可靠性和稳定性，产品已通过多项国内外权威认证（CE、CCC、FCC、ROHS）。凭借优质的产品和完善的服务体系，研显触控赢得了众多世界500强企业及行业客户的信赖与合作。</p>
@@ -211,4 +213,93 @@
     </div>
 </section>
 <!-- 关于我们 End -->
+<!-- 新闻资讯 Start -->
+<section class="uk-section">
+    <div class="uk-container uk-container-large">
+        <h2 class="uk-section-title">新闻资讯</h2>
+        <p class="uk-section-title-desc">关注研显触控，获取最新行业资讯</p>
+        <hr>
+        <div uk-grid class="uk-grid-small uk-grid-match">
+            <div class="uk-width-2-5 yx-news-slider">
+                <div class="swiper" id="news-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img alt="新闻资讯" src="<?php echo get_theme_file_uri('/assets/images/news_1.jpg'); ?>">
+                            <div class="swiper-slide-overlay uk-position-medium uk-position-bottom-center">
+                                <small class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.2s">2025-08-28</small>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.4s">研显深化国产芯片应用实践，强化工业一体机本土方案能力</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img alt="新闻资讯" src="<?php echo get_theme_file_uri('/assets/images/news_2.jpg'); ?>">
+                            <div class="swiper-slide-overlay uk-position-medium uk-position-bottom-center">
+                                <small class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.2s">2025-08-29</small>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.4s">研显解读——工业平板电脑厂家芯片选型中AMD被边缘化的根本原因</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img alt="新闻资讯" src="<?php echo get_theme_file_uri('/assets/images/news_3.jpg'); ?>">
+                            <div class="swiper-slide-overlay uk-position-medium uk-position-bottom-center">
+                                <small class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.2s">2025-08-30</small>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.4s">研显深化国产芯片应用实践，强化工业一体机本土方案能力</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img alt="新闻资讯" src="<?php echo get_theme_file_uri('/assets/images/news_4.jpg'); ?>">
+                            <div class="swiper-slide-overlay uk-position-medium uk-position-bottom-center">
+                                <small class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.2s">2025-08-31</small>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.4s">数字化浪潮下，工控电脑一体机成物流仓库“效率担当”！</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img alt="新闻资讯" src="<?php echo get_theme_file_uri('/assets/images/news_5.jpg'); ?>">
+                            <div class="swiper-slide-overlay uk-position-medium uk-position-bottom-center">
+                                <small class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.2s">2025-09-01</small>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.4s">工业4.0时代，研显触控如何用定制工控一体机适配不同行业场景？</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="uk-width-3-5 yx-news-list">
+                <div uk-grid class="uk-grid-collapse uk-child-width-1-2">
+                    <div class="yx-news-item">
+                        <div class="yx-news-item-info">
+                            <small>2025-08-28</small>
+                            <h3>研显深化国产芯片应用实践，强化工业一体机本土方案能力</h3>
+                            <a href="#" class="uk-button uk-border-pill uk-button-small uk-button-default">阅读更多</a>
+                        </div>
+                    </div>
+                    <div class="yx-news-item">
+                        <div class="yx-news-item-info">
+                            <small>2025-08-29</small>
+                            <h3>研显解读——工业平板电脑厂家芯片选型中AMD被边缘化的根本原因</h3>
+                            <a href="#" class="uk-button uk-border-pill uk-button-small uk-button-default">阅读更多</a>
+                        </div>
+                    </div>
+                    <div class="yx-news-item">
+                        <div class="yx-news-item-info">
+                            <small>2025-08-30</small>
+                            <h3>数字化浪潮下，工控电脑一体机成物流仓库“效率担当”！</h3>
+                            <a href="#" class="uk-button uk-border-pill uk-button-small uk-button-default">阅读更多</a>
+                        </div>
+                    </div>
+                    <div class="yx-news-item">
+                        <div class="yx-news-item-info">
+                            <small>2025-09-01</small>
+                            <h3>工业4.0时代，研显触控如何用定制工控一体机适配不同行业场景？</h3>
+                            <a href="#" class="uk-button uk-border-pill uk-button-small uk-button-default">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand">
+                <div class="uk-text-center">
+                    <a class="uk-button uk-border-pill yx-button-primary" href="#">查看更多</a>
+                </div>
+            </div>
+</section>
+<!-- 新闻资讯 End -->
 <?php get_footer(); ?>
