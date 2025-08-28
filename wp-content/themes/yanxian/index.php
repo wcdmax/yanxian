@@ -214,7 +214,7 @@
 </section>
 <!-- 关于我们 End -->
 <!-- 新闻资讯 Start -->
-<section class="uk-section">
+<section class="uk-section uk-background-cover" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/bg-news.jpg'); ?>');">
     <div class="uk-container uk-container-large">
         <h2 class="uk-section-title">新闻资讯</h2>
         <p class="uk-section-title-desc">关注研显触控，获取最新行业资讯</p>
