@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper(document.getElementById('main-slide'), {
+    // 主页轮播图
+    new Swiper(document.getElementById('main-slide'), {
         loop: true,
         speed: 2000,
         effect: 'fade',
@@ -16,6 +17,30 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+    });
+
+    // 新闻轮播图
+    new Swiper(document.getElementById('news-slide'), {
+        loop: true,
+        speed: 2000,
+        effect: 'fade',
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+            init: function () {
+                swiperAnimateCache(this);
+                swiperAnimate(this);
+            },
+            slideChangeTransitionStart: function (swiper) {
+                swiperAnimate(swiper);
+            }
+        }
     });
 
     // Scroll Down 功能
