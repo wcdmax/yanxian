@@ -665,3 +665,25 @@
     transition: 10s linear;
     transform: scale(1.1, 1.1);
 }
+
+/* 页脚部分 */
+.yx-footer-item>* {
+    margin: unset;
+}
+
+.yx-footer-item>p,
+.yx-footer-item>h4 {
+    color: white;
+}
+
+.yx-footer-item>a {
+    color: rgba(255, 255, 255, .7);
+}
+
+.yx-footer-item>a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.yx-footer-hr {
+    border-top: 1px solid rgba(255, 255, 255, .1)
+}
