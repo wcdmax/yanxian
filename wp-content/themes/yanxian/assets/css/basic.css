@@ -355,3 +355,67 @@ body {
     padding: 10% 30px 30px;
     background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .8) 90%);
 }
+
+/* 关于我们 */
+.yx-about-section>* {
+    z-index: 2;
+    position: relative;
+}
+
+.yx-about-item {
+    text-align: center;
+}
+
+.yx-about-item span {
+    color: var(--text-color-default);
+}
+
+.yx-about-content p {
+    color: #333333;
+}
+
+.yx-about-item h2 {
+    font-size: 3rem;
+    position: relative;
+    font-weight: bolder;
+    color: var(--text-color-primary);
+}
+
+.yx-about-item h2::after {
+    top: 0;
+    content: "+";
+    font-size: 2rem;
+    position: absolute;
+    font-weight: bolder;
+    color: var(--text-color-primary);
+}
+
+.yx-about-content>h1 {
+    margin: unset;
+    color: var(--text-color-default);
+}
+
+.yx-about-content>h4 {
+    margin-top: .5em;
+    color: var(--text-color-default);
+}
+
+.yx-about-section::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-image: url('../images/bg-about.png');
+}
+
+.yx-about-section {
+    position: relative;
+    background: linear-gradient(to bottom, #f2f8fb, #e2f1f5);
+}

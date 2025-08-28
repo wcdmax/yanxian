@@ -162,4 +162,52 @@
     </div>
 </section>
 <!-- 解决方案 End -->
+<!-- 关于我们 Start -->
+<section class="uk-section yx-about-section">
+    <div class="uk-container uk-container-large">
+        <div uk-grid class="uk-grid-match uk-grid-medium">
+            <div class="uk-width-3-5">
+                <div class="yx-about-content">
+                    <h1>关于研显触控</h1>
+                    <h4>专注工业显控设备，提供全方位定制方案</h4>
+                    <p>深圳市研显触控科技有限公司是一家专注于工业互联网领域的高新技术企业，集研发、生产、销售和服务于一体。公司主营工业一体机、工业触摸屏、工业平板电脑、商用广告机等智能终端设备，广泛应用于智能制造、医疗政务、酒店餐饮、交通枢纽、智慧零售、教育、金融等多个行业领域。我们拥有自主研发团队和现代化生产基地，具备强大的产品定制能力，能够根据客户需求提供屏幕尺寸、接口模块、安装方式、硬件配置等多维度的个性化定制服务，支持OEM/ODM合作模式，满足不同行业客户的多样化应用场景。</p>
+                    <p>公司始终坚持以技术创新为核心驱动力，产品兼容Android、Windows、Linux等多种主流操作系统，支持统信、麒麟、鸿蒙等国产系统，具备良好的系统兼容性和扩展性。我们通过严格的质量管理体系，确保每一台设备的高可靠性和稳定性，产品已通过多项国内外权威认证。凭借优质的产品和完善的服务体系，研显触控赢得了众多世界500强企业及行业客户的信赖与合作。</p>
+                    <p>未来，研显触控将继续深耕工业显控领域，持续提升自主创新能力，致力于为客户提供更智能、更高效、更安全的工业互联网解决方案，助力中国制造业数字化转型升级，成为行业领先的智能终端设备及解决方案提供商。</p>
+                    <ul uk-grid class="uk-grid-small uk-grid-match yx-about-list uk-child-width-1-4">
+                        <li>
+                            <div class="yx-about-item">
+                                <h2>200</h2>
+                                <span>大型项目</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="yx-about-item">
+                                <h2>1000</h2>
+                                <span>合作客户</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="yx-about-item">
+                                <h2>4000</h2>
+                                <span>生产基地</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="yx-about-item">
+                                <h2>10000</h2>
+                                <span>月供货量</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-width-2-5">
+                <div>
+                    <img src="<?php echo get_theme_file_uri('/assets/images/about_us.png'); ?>" alt="关于我们">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 关于我们 End -->
 <?php get_footer(); ?>
