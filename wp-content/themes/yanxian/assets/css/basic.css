@@ -10,6 +10,10 @@
     --yx-linear-hover-gradient: linear-gradient(90deg, #214e91 0%, #3a7bd5 100%);
 }
 
+.yx-text-white {
+    color: white;
+}
+
 .yx-button-primary:hover {
     color: white;
     box-shadow: var(--yx-box-shadow);
@@ -352,6 +356,10 @@
     background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .8) 90%);
 }
 
+.yx-solution-section {
+    background: linear-gradient(180deg, #fafdff 0%, #e3efff 40%, #d4e6ff 80%, #a1ccff 100%);
+}
+
 /* 关于我们 */
 .yx-about-section>* {
     z-index: 2;
@@ -413,7 +421,7 @@
 
 .yx-about-section {
     position: relative;
-    background: linear-gradient(to bottom, #f2f8fb, #e2f1f5);
+    background: linear-gradient(180deg, #fafdff 0%, #e3efff 40%, #92b3e1 80%, #548ddd 100%);
 }
 
 /* 关于我们数据展示区域 */

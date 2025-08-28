@@ -91,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand">
+            <!-- <div class="uk-width-expand">
                 <div class="uk-padding yx-prod-system uk-background-default">
                     <div uk-grid class="uk-grid-small uk-grid-match uk-child-width-1-4">
                         <div>
@@ -124,13 +124,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
 <!-- 产品中心 End -->
 <!-- 解决方案 Start -->
-<section class="uk-section">
+<section class="uk-section yx-solution-section">
     <div class="uk-container uk-container-large">
         <h2 class="uk-section-title">解决方案</h2>
         <p class="uk-section-title-desc">以技术为驱动，提供成熟的行业解决方案，500强信赖的工控品牌</p>
