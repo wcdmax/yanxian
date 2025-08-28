@@ -179,12 +179,12 @@ body {
     height: 100vh;
     object-fit: cover;
     transition: 1s linear 2s;
-    transform: scale(1.1, 1.1);
+    transform: scale(1, 1);
 }
 
 #main-slide .swiper-slide-active img {
     transition: 10s linear;
-    transform: scale(1, 1);
+    transform: scale(1.1, 1.1);
 }
 
 #main-slide .swiper-button-prev {
