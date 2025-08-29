@@ -31,35 +31,15 @@
                         </a>
                     </div>
                     <div class="uk-navbar-center">
-                        <ul class="uk-navbar-nav yx-navbar-nav" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
-                            <li class="uk-active"><a href="#">首页</a></li>
-                            <li>
-                                <a href="#">产品中心<span uk-navbar-parent-icon></span></a>
-                                <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 500">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li><a href="#">工控一体机</a></li>
-                                        <li><a href="#">工业触摸屏</a></li>
-                                        <li><a href="#">商用广告机</a></li>
-                                        <li><a href="#">工业平板电脑</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">解决方案<span uk-navbar-parent-icon></span></a>
-                                <div class="uk-navbar-dropdown yx-navbar-dropdown" uk-dropdown="animation: reveal-top; animate-out: true; duration: 500">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li><a href="#">智能制造</a></li>
-                                        <li><a href="#">医疗政务</a></li>
-                                        <li><a href="#">酒店餐饮</a></li>
-                                        <li><a href="#">交通枢纽</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">样机借测</a></li>
-                            <li><a href="#">关于我们</a></li>
-                            <li><a href="#">联系我们</a></li>
-                            <li><a href="#">服务支持</a></li>
-                        </ul>
+                        <?php
+                        wp_nav_menu(array(
+                            'container' => false,
+                            'theme_location' => 'main_menu',
+                            'walker' => new Main_Menu_Walker(),
+                            'menu_class' => 'uk-navbar-nav yx-navbar-nav',
+                            'items_wrap' => '<ul id="%1$s" class="%2$s" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">%3$s</ul>'
+                        ));
+                        ?>
                     </div>
                     <div class="uk-navbar-right yx-navbar-right">
                         <ul class="uk-navbar-nav">
