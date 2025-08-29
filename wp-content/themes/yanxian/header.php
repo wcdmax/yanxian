@@ -27,11 +27,11 @@
                 <div uk-navbar>
                     <div class="uk-navbar-left">
                         <a href="/" class="uk-logo uk-navbar-item">
-                            <img alt="研显触控" title="研显触控" src="<?php echo get_theme_file_uri('/assets/icons/logo.png'); ?>">
+                            <img alt="研显触控" title="研显触控" uk-scrollspy="cls: uk-animation-scale-up;" src="<?php echo get_theme_file_uri('/assets/icons/logo.png'); ?>">
                         </a>
                     </div>
                     <div class="uk-navbar-center">
-                        <ul class="uk-navbar-nav yx-navbar-nav">
+                        <ul class="uk-navbar-nav yx-navbar-nav" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
                             <li class="uk-active"><a href="#">首页</a></li>
                             <li>
                                 <a href="#">产品中心<span uk-navbar-parent-icon></span></a>
@@ -62,9 +62,11 @@
                         </ul>
                     </div>
                     <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav yx-navbar-nav">
-                            <li><a href="#" class="uk-navbar-item">登录</a></li>
-                            <li><a href="#" class="uk-navbar-item">注册</a></li>
+                        <ul class="uk-navbar-nav yx-navbar-nav" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
+                            <li class="uk-navbar-item">
+                                <img alt="400电话" title="400电话" class="yk-navbar-phone-icon" src="<?php echo get_theme_file_uri('/assets/icons/phone.png'); ?>">
+                                <p class="yx-navbar-phone"></p>
+                            </li>
                         </ul>
                     </div>
                 </div>
