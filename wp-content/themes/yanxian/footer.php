@@ -23,83 +23,15 @@
             </div>
             <div class="uk-width-2-3">
                 <div uk-grid class="uk-grid-small uk-grid-match uk-child-width-1-5">
-                    <div>
-                        <ul class="uk-list yx-footer-list" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
-                            <li class="yx-footer-item">
-                                <h4 class="uk-footer-title">关于我们</h4>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">公司简介</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">联系我们</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="uk-list yx-footer-list" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
-                            <li class="yx-footer-item">
-                                <h4 class="uk-footer-title">新闻资讯</h4>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">企业动态</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">行业资讯</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="uk-list yx-footer-list" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
-                            <li class="yx-footer-item">
-                                <h4 class="uk-footer-title">服务支持</h4>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">售后政策</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">下载中心</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="uk-list yx-footer-list" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
-                            <li class="yx-footer-item">
-                                <h4 class="uk-footer-title">解决方案</h4>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">智能制造</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">政务医疗</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">酒店餐饮</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">交通枢纽</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="uk-list yx-footer-list">
-                            <li class="yx-footer-item">
-                                <h4 class="uk-footer-title">产品中心</h4>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">工控一体机</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">工业触摸屏</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">商用广告机</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">工业平板电脑</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <?php
+                    wp_nav_menu([
+                        'depth' => 2,
+                        'container' => false,
+                        'items_wrap' => '%3$s',
+                        'theme_location' => 'footer_menu',
+                        'walker' => new Footer_Menu_Walker(),
+                    ]);
+                    ?>
                 </div>
             </div>
         </div>
