@@ -5,6 +5,7 @@
  *
  * @package Yanxian
  */
+require_once 'includes/form.php';
 require_once 'includes/site-info.php';
 require_once 'includes/class-main-menu-walker.php';
 require_once 'includes/class-footer-menu-walker.php';
