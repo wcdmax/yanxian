@@ -65,25 +65,6 @@
                     <div>
                         <ul class="uk-list yx-footer-list">
                             <li class="yx-footer-item">
-                                <h4 class="uk-footer-title">产品中心</h4>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">工控一体机</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">工业触摸屏</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">商用广告机</a>
-                            </li>
-                            <li class="yx-footer-item">
-                                <a href="#" target="_blank" class="uk-text-decoration-none">工业平板电脑</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="uk-list yx-footer-list">
-                            <li class="yx-footer-item">
                                 <h4 class="uk-footer-title">解决方案</h4>
                             </li>
                             <li class="yx-footer-item">
@@ -97,6 +78,25 @@
                             </li>
                             <li class="yx-footer-item">
                                 <a href="#" target="_blank" class="uk-text-decoration-none">交通枢纽</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-list yx-footer-list">
+                            <li class="yx-footer-item">
+                                <h4 class="uk-footer-title">产品中心</h4>
+                            </li>
+                            <li class="yx-footer-item">
+                                <a href="#" target="_blank" class="uk-text-decoration-none">工控一体机</a>
+                            </li>
+                            <li class="yx-footer-item">
+                                <a href="#" target="_blank" class="uk-text-decoration-none">工业触摸屏</a>
+                            </li>
+                            <li class="yx-footer-item">
+                                <a href="#" target="_blank" class="uk-text-decoration-none">商用广告机</a>
+                            </li>
+                            <li class="yx-footer-item">
+                                <a href="#" target="_blank" class="uk-text-decoration-none">工业平板电脑</a>
                             </li>
                         </ul>
                     </div>
