@@ -1,0 +1,8 @@
+{
+    "require": {
+        "alibabacloud/tea-utils": "^0.2.21",
+        "alibabacloud/tea-console": "^0.1.0",
+        "alibabacloud/dysmsapi-20170525": "^4.0.0",
+        "alibabacloud/darabonba-openapi": "^0.2.15"
+    }
+}
