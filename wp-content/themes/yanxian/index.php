@@ -302,4 +302,5 @@
             </div>
 </section>
 <!-- 新闻资讯 End -->
-<?php get_footer(); ?>
+<?php get_footer();
+get_sidebar(); ?>
