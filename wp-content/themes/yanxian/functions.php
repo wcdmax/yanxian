@@ -5,8 +5,8 @@
  *
  * @package Yanxian
  */
-
 require_once 'includes/site-info.php';
+require_once 'includes/class-main-menu-walker.php';
 
 // 启用菜单
 add_theme_support('nav-menus');
