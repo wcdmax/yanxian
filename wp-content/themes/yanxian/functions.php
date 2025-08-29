@@ -13,6 +13,9 @@ require_once 'includes/class-footer-menu-walker.php';
 // 启用菜单
 add_theme_support('nav-menus');
 
+// 启用区块样板
+add_theme_support('block-patterns');
+
 // 注册菜单位置
 add_action('init', function () {
     register_nav_menus(array(
