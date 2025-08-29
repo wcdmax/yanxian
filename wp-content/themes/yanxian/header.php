@@ -58,7 +58,7 @@
                             <li><a href="#">样机借测</a></li>
                             <li><a href="#">关于我们</a></li>
                             <li><a href="#">联系我们</a></li>
-                            <li><a href="#">服务与支持</a></li>
+                            <li><a href="#">服务支持</a></li>
                         </ul>
                     </div>
                     <div class="uk-navbar-right yx-navbar-right">
