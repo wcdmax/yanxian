@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     if (document.querySelector('.yx-navbar-phone-number')) {
-        const phoneNumber = '19925438691';
-        console.log('Phone Number:', phoneNumber);
+        const phoneNumber = yx.phone;
         // 遍历电话号码的每个字符，使用span元素包裹
         for (let i = 0; i < phoneNumber.length; i++) {
             const span = document.createElement('span');
