@@ -55,22 +55,51 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // 解决方案列表鼠标悬停效果
+    // 解决方案列表自动轮播和鼠标悬停效果
     const solutionList = document.querySelector('.yx-solution-list');
     if (solutionList) {
         const solutionItems = solutionList.querySelectorAll('.yx-solution-item');
+        let intervalId = null;
+        let currentIndex = 0;
 
-        solutionItems.forEach(item => {
+        // 设置当前激活项
+        function setActive(index) {
+            solutionItems.forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+        }
+
+        // 开始自动切换
+        function startAutoSwitch() {
+            intervalId = setInterval(() => {
+                currentIndex = (currentIndex + 1) % solutionItems.length;
+                setActive(currentIndex);
+            }, 5000);
+        }
+
+        // 停止自动切换
+        function stopAutoSwitch() {
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null;
+            }
+        }
+
+        // 鼠标悬停时切换active并暂停自动切换，移出时恢复自动切换
+        solutionItems.forEach((item, idx) => {
             item.addEventListener('mouseenter', function () {
-                // 移除所有其他项的 active 类
-                solutionItems.forEach(otherItem => {
-                    otherItem.classList.remove('active');
-                });
-
-                // 为当前悬停项添加 active 类
-                this.classList.add('active');
+                stopAutoSwitch();
+                setActive(idx);
+                currentIndex = idx;
+            });
+            item.addEventListener('mouseleave', function () {
+                startAutoSwitch();
             });
         });
+
+        // 初始化active项
+        setActive(currentIndex);
+        startAutoSwitch();
     }
 
     // 关于我们数字计数动画
