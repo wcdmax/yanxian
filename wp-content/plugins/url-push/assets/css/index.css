@@ -1,0 +1,28 @@
+.push_success {
+    color: #090;
+}
+.push_fail {
+    color: #c00;
+}
+
+.yk-table-id {
+    width: 80px;
+}
+
+.yk-table-url {
+    width: 360px;
+    word-break: break-all;
+}
+
+.yk-form {
+    margin-bottom: 10px;
+}
+.yk-subsubsub {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.yk-platform-icon {
+    height: 18px;
+    vertical-align: middle;
+}
