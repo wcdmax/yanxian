@@ -413,7 +413,7 @@ add_action('wp_enqueue_scripts', function () {
     );
 
     // nonce传参
-    wp_localize_script('post-form', 'yk', array(
+    wp_localize_script('post-form', 'yx', array(
         'site_name' => get_bloginfo('name'),
         'nonce' => wp_create_nonce('yx_nonce'),
         'phone' => get_option('company_phone'),
