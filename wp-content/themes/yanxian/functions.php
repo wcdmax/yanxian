@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Yanxian Theme Functions
  *
@@ -13,7 +14,7 @@ add_theme_support('nav-menus');
 // 注册菜单位置
 add_action('init', function () {
     register_nav_menus(array(
-        'main_menu' => '全局导航',
+        'main_menu' => '顶部导航',
         'footer_menu' => '底部导航',
     ));
 });
@@ -64,7 +65,7 @@ function is_post_method(): bool
 }
 
 // 重写分类链接
-add_filter('category_link', function($url) {
+add_filter('category_link', function ($url) {
     return str_replace('/category/', '/', $url);
 });
 
@@ -79,21 +80,22 @@ add_filter('get_the_archive_title', function ($title) {
 });
 
 // 移除emoji
-remove_action( 'wp_print_styles', 'print_emoji_styles' );
-remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action('wp_print_styles', 'print_emoji_styles');
+remove_action('wp_head', 'print_emoji_detection_script', 7);
 
 // 移除全局样式（global-styles-inline-css）
-remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
+remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
 // 移除经典主题样式（classic-theme-styles-inline-css）
-remove_action( 'wp_enqueue_scripts', 'wp_enqueue_classic_theme_styles' );
+remove_action('wp_enqueue_scripts', 'wp_enqueue_classic_theme_styles');
 
 // 移除区块样式
-remove_action( 'wp_enqueue_scripts', 'wp_common_block_scripts_and_styles' );
+remove_action('wp_enqueue_scripts', 'wp_common_block_scripts_and_styles');
 
 /**
  * 清除footer_menu缓存
  */
-function clear_footer_menu_cache() {
+function clear_footer_menu_cache()
+{
     delete_transient('footer_menu_rest_data');
 }
 
@@ -133,8 +135,9 @@ add_action('admin_menu', function () {
 /**
  * 是否微信浏览器
  */
-function isWeixinBrowser(): bool {
-	return str_contains( $_SERVER['HTTP_USER_AGENT'], 'MicroMessenger' );
+function isWeixinBrowser(): bool
+{
+    return str_contains($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger');
 }
 
 /**
@@ -198,7 +201,7 @@ add_action('wp_nav_menu_item_custom_fields', function ($item_id, $item) {
         return;
     }
     $target = get_post_meta($item_id, '_menu_item_target', true);
-    ?>
+?>
     <p class="description description-wide">
         <label for="edit-menu-item-target-<?php echo $item_id; ?>">
             打开方式<br>
@@ -209,7 +212,7 @@ add_action('wp_nav_menu_item_custom_fields', function ($item_id, $item) {
             </select>
         </label>
     </p>
-    <?php
+<?php
 }, 10, 2);
 
 /**
@@ -277,7 +280,7 @@ add_action('save_post', 'add_post_views_count', 10, 3);
 //             $paged = get_query_var('paged');
 //             // 获取分类自定义标题
 //             $cat_title = get_term_meta(get_query_var('cat'), 'cat_title', true);
-            
+
 //             // 如果存在自定义标题
 //             if (!empty($cat_title)) {
 //                 // 如果不是第一页,添加分页信息
@@ -427,7 +430,7 @@ add_action('publish_post', function ($post_id) {
     if (strpos($post_link, '/application/') !== false) {
         return; // 跳过错误的URL格式
     }
-    
+
     // 实例化推送类
     $url_push = new URL_Push($post_id, $post_link);
 
@@ -440,7 +443,6 @@ add_action('publish_post', function ($post_id) {
         // 推送至百度
         $url_push->push_url_to_baidu();
     }
-
 }, 10, 1);
 
 /**
@@ -457,7 +459,7 @@ add_filter('render_block', function ($block_content, $block) {
 
     // 提取figcaption文本
     preg_match_all('/<figcaption[^>]*>(.*?)<\/figcaption>/i', $block_content, $figcaptions);
-    
+
     if (!empty($matches[0])) {
         $new_content = '';
         foreach ($matches[0] as $key => $img) {
@@ -540,3 +542,22 @@ add_action('admin_menu', function () {
         }
     }
 }, 100);
+
+/**
+ * 重写产品分类的永久链接结构
+ */
+add_filter('rewrite_rules_array', function ($rules) {
+    $new_rules = array(
+        // 产品分页（带分类）
+        '^product/([^/]+)/page/([0-9]+)$' => 'index.php?post_type=product&category_name=$matches[1]&paged=$matches[2]',
+        // 产品详情（带分类）
+        '^product/([^/]+)/([0-9]+)\.html$' => 'index.php?post_type=product&category_name=$matches[1]&p=$matches[2]',
+        // 产品分页（不带分类）
+        '^product/page/([0-9]+)$' => 'index.php?post_type=product&paged=$matches[1]&category_name=product',
+        // 二级产品分类
+        '^product/([^/]+)/?$' => 'index.php?post_type=product&category_name=$matches[1]',
+        // 一级分类归档
+        '^product/?$' => 'index.php?category_name=product',
+    );
+    return $new_rules + $rules;
+});
