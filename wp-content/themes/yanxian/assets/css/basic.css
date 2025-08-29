@@ -97,7 +97,7 @@
 }
 
 .yx-navbar-nav>li:hover::after,
-.yx-navbar-nav>li.uk-active::after {
+.yx-navbar-nav>li.current-menu-item::after {
     transform: scaleX(1);
 }
 
