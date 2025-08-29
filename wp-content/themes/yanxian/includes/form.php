@@ -415,7 +415,7 @@ add_action('wp_enqueue_scripts', function () {
     // nonce传参
     wp_localize_script('post-form', 'yk', array(
         'site_name' => get_bloginfo('name'),
-        'nonce' => wp_create_nonce('yk_nonce'),
+        'nonce' => wp_create_nonce('yx_nonce'),
         'phone' => get_option('company_phone'),
         'email' => get_option('company_email'),
         'wechat' => get_option('company_wechat'),
@@ -442,7 +442,7 @@ function handle_contact_form()
         wp_send_json_error(['code' => 400, 'message' => 'Rrequest is sent over HTTPS']);
     } elseif (!is_post_method()) {
         wp_send_json_error(['code' => 400, 'message' => 'Method validation error']);
-    } elseif (!wp_verify_nonce($_POST['nonce'], 'yk_nonce')) {
+    } elseif (!wp_verify_nonce($_POST['nonce'], 'yx_nonce')) {
         wp_send_json_error(['code' => 400, 'message' => 'Nonce validation error']);
     }
 
