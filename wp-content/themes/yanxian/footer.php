@@ -2,7 +2,7 @@
     <div class="uk-container uk-container-large">
         <div uk-grid class="uk-grid-small uk-grid-match">
             <div class="uk-width-1-3">
-                <ul class="uk-list yx-footer-list">
+                <ul class="uk-list yx-footer-list" uk-scrollspy="cls: uk-animation-slide-left; target: > li; delay: 100">
                     <li class="yx-footer-item">
                         <p>销售热线</p>
                         <h4>19925438691</h4>
@@ -24,7 +24,7 @@
             <div class="uk-width-2-3">
                 <div uk-grid class="uk-grid-small uk-grid-match uk-child-width-1-5">
                     <div>
-                        <ul class="uk-list yx-footer-list">
+                        <ul class="uk-list yx-footer-list" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
                             <li class="yx-footer-item">
                                 <h4 class="uk-footer-title">关于我们</h4>
                             </li>
@@ -37,7 +37,7 @@
                         </ul>
                     </div>
                     <div>
-                        <ul class="uk-list yx-footer-list">
+                        <ul class="uk-list yx-footer-list" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
                             <li class="yx-footer-item">
                                 <h4 class="uk-footer-title">新闻资讯</h4>
                             </li>
@@ -50,7 +50,7 @@
                         </ul>
                     </div>
                     <div>
-                        <ul class="uk-list yx-footer-list">
+                        <ul class="uk-list yx-footer-list" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
                             <li class="yx-footer-item">
                                 <h4 class="uk-footer-title">服务支持</h4>
                             </li>
@@ -63,7 +63,7 @@
                         </ul>
                     </div>
                     <div>
-                        <ul class="uk-list yx-footer-list">
+                        <ul class="uk-list yx-footer-list" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
                             <li class="yx-footer-item">
                                 <h4 class="uk-footer-title">解决方案</h4>
                             </li>
