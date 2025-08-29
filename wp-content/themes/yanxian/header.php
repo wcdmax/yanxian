@@ -61,11 +61,11 @@
                             <li><a href="#">服务与支持</a></li>
                         </ul>
                     </div>
-                    <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav yx-navbar-nav" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
-                            <li class="uk-navbar-item">
-                                <img alt="400电话" title="400电话" class="yk-navbar-phone-icon" src="<?php echo get_theme_file_uri('/assets/icons/phone.png'); ?>">
-                                <p class="yx-navbar-phone"></p>
+                    <div class="uk-navbar-right yx-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-navbar-item" uk-scrollspy="cls: uk-animation-slide-top-small; delay: 800">
+                                <img alt="400电话" title="400电话" src="<?php echo get_theme_file_uri('/assets/icons/phone.png'); ?>">
+                                <p class="yx-navbar-phone-number"></p>
                             </li>
                         </ul>
                     </div>
