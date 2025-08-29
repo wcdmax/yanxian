@@ -32,24 +32,24 @@
 <!-- 产品中心 Start -->
 <section class="uk-section uk-background-top-left" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/bg-product.jpg'); ?>');">
     <div class="uk-container uk-container-large">
-        <h2 class="uk-section-title">产品中心</h2>
-        <p class="uk-section-title-desc">源头厂家，提供全方位多行业定制方案，满足您的各种需求</p>
+        <h2 class="uk-section-title" uk-parallax="opacity: 0,1; x: -100,0; end: 50vh + 50%">产品中心</h2>
+        <p class="uk-section-title-desc" uk-parallax="opacity: 0,1; x: 100,0; end: 50vh + 50%">源头厂家，提供全方位多行业定制方案，满足您的各种需求</p>
         <hr>
-        <div uk-grid class="uk-grid-small uk-grid-match">
+        <div uk-grid id="product" class="uk-grid-small uk-grid-match" uk-scrollspy="cls: uk-animation-scale-up; target: .yx-card-image>img; delay: 100;">
             <div class="uk-width-2-3">
                 <div class="uk-card yx-card-body uk-card-hover uk-card-default uk-overflow-hidden uk-background-norepeat" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/provide_customized.png'); ?>');">
-                    <div class="uk-position-medium yx-card-customized uk-position-center-right">
+                    <div class="uk-position-medium yx-card-customized uk-position-center-right" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > h3,p; delay: 100">
                         <h3>Provide customized<br>
                             services for customers</h3>
                         <h3 class="uk-margin-remove">为客户提供个性化定制服务</h3>
                         <p class="uk-text-meta">屏幕尺寸、接口模块、安装方式、硬件配置、OEM/ODM...</p>
-                        <a class="uk-button uk-border-pill yx-button-primary" href="#">联系我们</a>
+                        <a href="#" class="uk-button uk-border-pill yx-button-primary" uk-scrollspy="cls: uk-animation-scale-up; delay: 400">联系我们</a>
                     </div>
                 </div>
             </div>
             <div class="uk-width-1-3">
                 <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
-                    <div class="yx-card-title">
+                    <div class="yx-card-title" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > *; delay: 100">
                         <h3>工控一体机</h3>
                         <p>Industrial All in One PC</p>
                     </div>
@@ -60,7 +60,7 @@
             </div>
             <div class="uk-width-1-3">
                 <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
-                    <div class="yx-card-title">
+                    <div class="yx-card-title" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > *; delay: 200">
                         <h3>工业触摸屏</h3>
                         <p>Industrial Display</p>
                     </div>
@@ -71,7 +71,7 @@
             </div>
             <div class="uk-width-1-3">
                 <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
-                    <div class="yx-card-title">
+                    <div class="yx-card-title" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > *; delay: 300">
                         <h3>商用广告机</h3>
                         <p>Commercial Advertising Machine</p>
                     </div>
@@ -82,7 +82,7 @@
             </div>
             <div class="uk-width-1-3">
                 <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
-                    <div class="yx-card-title">
+                    <div class="yx-card-title" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > *; delay: 400">
                         <h3>工业平板电脑</h3>
                         <p>Industrial Tablet PC</p>
                     </div>
@@ -132,10 +132,10 @@
 <!-- 解决方案 Start -->
 <section class="uk-section yx-solution-section">
     <div class="uk-container uk-container-large">
-        <h2 class="uk-section-title">解决方案</h2>
-        <p class="uk-section-title-desc">以技术为驱动，提供成熟的行业解决方案，500强信赖的工控品牌</p>
+        <h2 class="uk-section-title" uk-parallax="opacity: 0,1; x: -100,0; end: 50vh + 50%">解决方案</h2>
+        <p class="uk-section-title-desc" uk-parallax="opacity: 0,1; x: 100,0; end: 50vh + 50%">以技术为驱动，提供成熟的行业解决方案，500强信赖的工控品牌</p>
         <hr>
-        <ul class="uk-flex yx-solution-list">
+        <ul class="uk-flex yx-solution-list" uk-scrollspy="cls: uk-animation-scale-up; target: > li; delay: 100; repeat: true">
             <li class="active yx-solution-item uk-background-cover" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/5770c.jpg') ?>);">
                 <div class="yx-solution-item-info">
                     <h3>智能制造</h3>
@@ -169,14 +169,14 @@
     <div class="uk-container uk-container-large">
         <div uk-grid class="uk-grid-small uk-grid-match">
             <div class="uk-width-3-5">
-                <div class="yx-about-content">
-                    <h2>关于研显触控</h2>
-                    <h4>专注工业显控设备，提供全方位定制方案</h4>
+                <div class="yx-about-content" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > p; delay: 100">
+                    <h2 uk-parallax="opacity: 0,1; x: -100,0; end: 50vh + 50%">关于研显触控</h2>
+                    <h4 uk-parallax="opacity: 0,1; x: 100,0; end: 50vh + 50%">专注工业显控设备，提供全方位定制方案</h4>
                     <p>深圳市研显触控科技有限公司是一家专注于工业互联网领域的高新技术企业，集研发、生产、销售和服务于一体。公司主营工业一体机、工业触摸屏、工业平板电脑、商用广告机等智能终端设备，广泛应用于智能制造、医疗政务、酒店餐饮、交通枢纽、智慧零售、教育、金融等多个行业领域。我们拥有自主研发团队和现代化生产基地，具备强大的产品定制能力，能够根据客户需求提供屏幕尺寸、接口模块、安装方式、硬件配置等多维度的个性化定制服务，支持OEM/ODM合作模式，满足不同行业客户的多样化应用场景。</p>
                     <p>公司始终坚持以技术创新为核心驱动力，拥有一支高素质的软硬件研发团队。我们通过严格的质量管理体系，确保每一台设备的高可靠性和稳定性，产品已通过多项国内外权威认证（CE、CCC、FCC、ROHS）。凭借优质的产品和完善的服务体系，研显触控赢得了众多世界500强企业及行业客户的信赖与合作。</p>
                     <!-- <p>未来，研显触控将继续深耕工业显控领域，持续提升自主创新能力，致力于为客户提供更智能、更高效、更安全的工业互联网解决方案，助力中国制造业数字化转型升级，成为行业领先的智能终端设备及解决方案提供商。</p> -->
-                    <a class="uk-button uk-border-pill yx-button-primary" href="/about">了解更多</a>
-                    <ul uk-grid class="uk-grid-small uk-grid-match yx-about-list uk-child-width-1-4">
+                    <a href="/about" class="uk-button uk-border-pill yx-button-primary" uk-scrollspy="cls: uk-animation-scale-up; delay: 300">了解更多</a>
+                    <ul uk-grid class="uk-grid-small uk-grid-match yx-about-list uk-child-width-1-4" uk-scrollspy="cls: uk-animation-scale-up; target: > li; delay: 200">
                         <li>
                             <div class="yx-about-item">
                                 <h2>200</h2>
@@ -216,11 +216,11 @@
 <!-- 新闻资讯 Start -->
 <section class="uk-section uk-background-cover" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/bg-news.jpg'); ?>');">
     <div class="uk-container uk-container-large">
-        <h2 class="uk-section-title">新闻资讯</h2>
-        <p class="uk-section-title-desc">关注研显触控，获取最新行业资讯</p>
+        <h2 class="uk-section-title" uk-parallax="opacity: 0,1; x: -100,0; end: 50vh + 50%">新闻资讯</h2>
+        <p class="uk-section-title-desc" uk-parallax="opacity: 0,1; x: 100,0; end: 50vh + 50%">关注研显触控，获取最新行业资讯</p>
         <hr>
         <div uk-grid class="uk-grid-small uk-grid-match">
-            <div class="uk-width-2-5 yx-news-slider">
+            <div class="uk-width-2-5 yx-news-slider" uk-scrollspy="cls: uk-animation-slide-left; delay: 100">
                 <div class="swiper" id="news-slide">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -263,8 +263,8 @@
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-            <div class="uk-width-3-5 yx-news-list">
-                <div uk-grid class="uk-grid-collapse uk-child-width-1-2">
+            <div class="uk-width-3-5 yx-news-list" uk-scrollspy="cls: uk-animation-slide-right; delay: 100">
+                <div uk-grid class="uk-grid-collapse uk-child-width-1-2" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 200">
                     <div class="yx-news-item">
                         <div class="yx-news-item-info">
                             <small>2025-08-28</small>
@@ -297,7 +297,7 @@
             </div>
             <div class="uk-width-expand">
                 <div class="uk-text-center">
-                    <a class="uk-button uk-border-pill yx-button-primary" href="#">查看更多</a>
+                    <a href="#" class="uk-button uk-border-pill yx-button-primary" uk-scrollspy="cls: uk-animation-scale-up; delay: 300">查看更多</a>
                 </div>
             </div>
 </section>
