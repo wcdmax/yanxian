@@ -780,6 +780,27 @@
     border-top: 1px solid rgba(255, 255, 255, .1)
 }
 
+/* 面包屑导航 */
+.yx-breadcrumb [uk-icon] {
+    vertical-align: text-top;
+}
+
+.yx-breadcrumb>*>:hover {
+    color: var(--theme-color);
+}
+
+.uk-breadcrumb>:last-child>span {
+    color: var(--theme-color);
+}
+
+.yx-breadcrumb>li>a {
+    color: var(--text-color-default);
+}
+
+.yx-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
+    color: var(--text-color-default);
+    margin: 0 10px 0 calc(10px - 4px)
+}
 /* 侧边栏部分 */
 .yx-sidebar {
     top: 50%;
@@ -805,7 +826,6 @@
     transition: all 0.3s ease;
 }
 
-/* 顶部按钮样式 */
 .yx-sidebar-top.show {
     display: block;
 }
@@ -815,7 +835,6 @@
     transition: all 0.3s ease;
 }
 
-/* 二维码样式 */
 .yx-sidebar-wechat {
     position: relative;
 }
