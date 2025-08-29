@@ -135,7 +135,7 @@
         <h2 class="uk-section-title" uk-parallax="opacity: 0,1; x: -100,0; end: 50vh + 50%">解决方案</h2>
         <p class="uk-section-title-desc" uk-parallax="opacity: 0,1; x: 100,0; end: 50vh + 50%">以技术为驱动，提供成熟的行业解决方案，500强信赖的工控品牌</p>
         <hr>
-        <ul class="uk-flex yx-solution-list" uk-scrollspy="cls: uk-animation-scale-up; target: > li; delay: 100; repeat: true">
+        <ul class="uk-flex yx-solution-list" uk-scrollspy="cls: uk-animation-scale-up; target: > li; delay: 200">
             <li class="active yx-solution-item uk-background-cover" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/5770c.jpg') ?>);">
                 <div class="yx-solution-item-info">
                     <h3>智能制造</h3>
