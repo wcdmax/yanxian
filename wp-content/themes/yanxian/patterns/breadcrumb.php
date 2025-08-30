@@ -49,8 +49,7 @@
                     $post = get_post();
                     if ($post->post_parent) :
                         $ancestors = array_reverse(get_post_ancestors($post->ID));
-                        foreach ($ancestors as $ancestor) :
-                            ?>
+                        foreach ($ancestors as $ancestor) : ?>
                             <li>
                                 <a title="<?php echo esc_attr(get_the_title($ancestor)); ?>" href="<?php echo esc_url(get_permalink($ancestor)); ?>">
                                     <?php echo esc_html(get_the_title($ancestor)); ?>
