@@ -19,8 +19,7 @@
                     $ancestors = array_reverse(get_ancestors($category->term_id, 'category'));
                     foreach ($ancestors as $ancestor) : $ancestor_obj = get_term($ancestor, 'category'); ?>
                         <li>
-                            <a title="<?php echo esc_attr($ancestor_obj->name); ?>" 
-                               href="<?php echo esc_url(get_category_link($ancestor)); ?>">
+                            <a title="<?php echo esc_attr($ancestor_obj->name); ?>" href="<?php echo esc_url(get_category_link($ancestor)); ?>">
                                 <?php echo esc_html($ancestor_obj->name); ?>
                             </a>
                         </li>
@@ -34,15 +33,13 @@
                         $ancestors = array_reverse(get_ancestors($category->term_id, 'category'));
                         foreach ($ancestors as $ancestor) : $ancestor_obj = get_term($ancestor, 'category'); ?>
                             <li>
-                                <a title="<?php echo esc_attr($ancestor_obj->name); ?>" 
-                                   href="<?php echo esc_url(get_category_link($ancestor)); ?>">
+                                <a title="<?php echo esc_attr($ancestor_obj->name); ?>" href="<?php echo esc_url(get_category_link($ancestor)); ?>">
                                     <?php echo esc_html($ancestor_obj->name); ?>
                                 </a>
                             </li>
                         <?php endforeach; ?>
                         <li>
-                            <a title="<?php echo esc_attr($category->name); ?>" 
-                               href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
+                            <a title="<?php echo esc_attr($category->name); ?>" href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
                                 <?php echo esc_html($category->name); ?>
                             </a>
                         </li>
@@ -55,8 +52,7 @@
                         foreach ($ancestors as $ancestor) :
                             ?>
                             <li>
-                                <a title="<?php echo esc_attr(get_the_title($ancestor)); ?>" 
-                                   href="<?php echo esc_url(get_permalink($ancestor)); ?>">
+                                <a title="<?php echo esc_attr(get_the_title($ancestor)); ?>" href="<?php echo esc_url(get_permalink($ancestor)); ?>">
                                     <?php echo esc_html(get_the_title($ancestor)); ?>
                                 </a>
                             </li>
