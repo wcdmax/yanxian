@@ -224,43 +224,42 @@
                 <div class="swiper" id="news-slide">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img alt="新闻资讯" src="<?php echo get_theme_file_uri('/assets/images/news_1.jpg'); ?>">
+                            <img alt="研显深化国产芯片应用实践，强化工业一体机本土方案能力" src="<?php echo get_theme_file_uri('/assets/images/news_1.jpg'); ?>">
                             <div class="swiper-slide-overlay uk-position-medium uk-position-bottom-center">
                                 <small class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.2s">2025-08-28</small>
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.4s">研显深化国产芯片应用实践，强化工业一体机本土方案能力</h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img alt="新闻资讯" src="<?php echo get_theme_file_uri('/assets/images/news_2.jpg'); ?>">
+                            <img alt="研显解读——工业平板电脑厂家芯片选型中AMD被边缘化的根本原因" src="<?php echo get_theme_file_uri('/assets/images/news_2.jpg'); ?>">
                             <div class="swiper-slide-overlay uk-position-medium uk-position-bottom-center">
                                 <small class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.2s">2025-08-29</small>
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.4s">研显解读——工业平板电脑厂家芯片选型中AMD被边缘化的根本原因</h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img alt="新闻资讯" src="<?php echo get_theme_file_uri('/assets/images/news_3.jpg'); ?>">
+                            <img alt="研显深化国产芯片应用实践，强化工业一体机本土方案能力" src="<?php echo get_theme_file_uri('/assets/images/news_3.jpg'); ?>">
                             <div class="swiper-slide-overlay uk-position-medium uk-position-bottom-center">
                                 <small class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.2s">2025-08-30</small>
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.4s">研显深化国产芯片应用实践，强化工业一体机本土方案能力</h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img alt="新闻资讯" src="<?php echo get_theme_file_uri('/assets/images/news_4.jpg'); ?>">
+                            <img alt="数字化浪潮下，工控电脑一体机成物流仓库“效率担当”！" src="<?php echo get_theme_file_uri('/assets/images/news_4.jpg'); ?>">
                             <div class="swiper-slide-overlay uk-position-medium uk-position-bottom-center">
                                 <small class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.2s">2025-08-31</small>
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.4s">数字化浪潮下，工控电脑一体机成物流仓库“效率担当”！</h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img alt="新闻资讯" src="<?php echo get_theme_file_uri('/assets/images/news_5.jpg'); ?>">
+                            <img alt="工业4.0时代，研显触控如何用定制工控一体机适配不同行业场景？" src="<?php echo get_theme_file_uri('/assets/images/news_5.jpg'); ?>">
                             <div class="swiper-slide-overlay uk-position-medium uk-position-bottom-center">
                                 <small class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.2s">2025-09-01</small>
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.4s">工业4.0时代，研显触控如何用定制工控一体机适配不同行业场景？</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
             <div class="uk-width-3-5 yx-news-list" uk-scrollspy="cls: uk-animation-slide-right; delay: 100">

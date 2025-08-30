@@ -634,6 +634,8 @@
     border-radius: 20px;
     --swiper-theme-color: white;
     --swiper-navigation-size: 26px;
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+    --swiper-pagination-bullet-inactive-color: white;
 }
 
 #news-slide .swiper-slide {

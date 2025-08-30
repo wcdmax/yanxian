@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
             delay: 5000,
             disableOnInteraction: false
         },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+        pagination: {
+            clickable: true,
+            el: '.swiper-pagination',
         },
         on: {
             init: function () {
