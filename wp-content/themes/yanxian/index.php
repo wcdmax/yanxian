@@ -206,7 +206,7 @@
             </div>
             <div class="uk-width-2-5">
                 <div class="uk-text-right">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/about_us.png'); ?>" alt="关于我们">
+                    <img uk-scrollspy="cls: uk-animation-scale-up; delay: 200" src="<?php echo get_theme_file_uri('/assets/images/about_us.png'); ?>" alt="关于我们">
                 </div>
             </div>
         </div>
