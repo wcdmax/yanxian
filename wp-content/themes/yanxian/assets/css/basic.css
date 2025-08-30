@@ -780,6 +780,56 @@
     border-top: 1px solid rgba(255, 255, 255, .1)
 }
 
+/* 二级分类菜单 */
+.yx-subnav > li:first-child {
+    padding-left: unset;
+}
+
+.yx-subnav > li:first-child::before {
+    content: none;
+}
+
+.yx-subnav .uk-active>a {
+    color: var(--text-color-primary) !important;
+}
+
+.yx-subnav>li>a {
+    position: relative;
+    font-size: 1rem !important;
+    transition: all 0.3s ease-in-out;
+    color: var(--text-color-default) !important;
+}
+
+.yx-subnav li.uk-active>a::after {
+    transform: scaleX(1);
+}
+
+.yx-subnav>li>a:hover::after {
+    transform: scaleX(1);
+}
+
+.yx-subnav>li>a:hover {
+    color: var(--text-color-primary) !important;
+}
+
+.yx-subnav>li>a::after {
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 3px;
+    content: "";
+    bottom: -30px;
+    display: block;
+    position: absolute;
+    border-radius: 2px;
+    transform: scaleX(0);
+    pointer-events: none;
+    transform-origin: center;
+    background: var(--text-color-primary);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
 /* 面包屑导航 */
 .yx-breadcrumb [uk-icon] {
     vertical-align: text-top;
@@ -798,6 +848,7 @@
 }
 
 .yx-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
+    content: ">";
     color: var(--text-color-default);
     margin: 0 10px 0 calc(10px - 4px)
 }
