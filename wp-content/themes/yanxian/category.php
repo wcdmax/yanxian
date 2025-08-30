@@ -19,8 +19,8 @@ $template = match (true) {
     <div class="uk-container uk-container-large">
         <div uk-grid class="uk-grid-small uk-grid-match uk-width-expand uk-child-width-1-2">
             <div>
-                <h2 class="yx-text-white"><?php echo single_cat_title(); ?></h2>
-                <p class="yx-text-white"><?php echo $category->description; ?></p>
+                <h2 class="yx-text-white" uk-scrollspy="cls: uk-animation-slide-bottom-small;"><?php echo single_cat_title(); ?></h2>
+                <p class="yx-text-white uk-margin-remove" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200;"><?php echo $category->description; ?></p>
             </div>
         </div>
     </div>
