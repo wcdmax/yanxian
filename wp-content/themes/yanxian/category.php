@@ -7,6 +7,7 @@ $ancestors = get_ancestors($category->term_id, 'category');
 // 如果已经是顶级分类，则直接获取顶级分类的slug
 $top_category = empty($ancestors) ? $category : get_term(end($ancestors), 'category');
 $category_slug = $top_category->slug; // 获取顶级分类的slug
+
 $template = match (true) {
     str_contains($category_slug, 'product') => 'product',
     str_contains($category_slug, 'service') => 'download',
@@ -25,27 +26,23 @@ $template = match (true) {
     </div>
 </section>
 <!-- 分类Banner End -->
-<!-- 二级分类菜单 Start -->
 <section class="uk-section uk-padding-remove uk-box-shadow-small">
     <div class="uk-container uk-container-large">
         <div class="uk-flex uk-flex-middle uk-flex-between uk-padding-small uk-padding-remove-horizontal">
-            <ul class="uk-subnav yx-subnav uk-margin-remove uk-subnav-divider">
-                <li class="uk-active"><a href="#">工控一体机</a></li>
-                <li><a href="#" class="uk-link-text">工业触摸屏</a></li>
-                <li><a href="#">商用广告机</a></li>
-                <li><a href="#">工业平板电脑</a></li>
-            </ul>
+            <!-- 二级分类菜单 Start -->
+            <?php echo do_blocks('<!-- wp:pattern {"slug":"yanxian/category-subnav"} /-->'); ?>
+            <!-- 二级分类菜单 End -->
             <!-- 面包屑导航 Start -->
             <?php echo do_blocks('<!-- wp:pattern {"slug":"yanxian/breadcrumb"} /-->'); ?>
             <!-- 面包屑导航 End -->
         </div>
     </div>
 </section>
-<!-- 二级分类菜单 End -->
 <section class="uk-section">
     <div class="uk-container uk-container-large">
         <h2>分类页面</h2>
         <h4>工控一体机产品</h4>
     </div>
 </section>
-<?php get_footer(); get_sidebar(); ?>
+<?php get_footer();
+get_sidebar(); ?>
