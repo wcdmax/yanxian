@@ -43,5 +43,4 @@ $template = match (true) {
         <?php get_template_part('template-parts/category', $template); ?>
     </div>
 </section>
-<?php get_footer();
-get_sidebar(); ?>
+<?php get_footer(); get_sidebar(); ?>
