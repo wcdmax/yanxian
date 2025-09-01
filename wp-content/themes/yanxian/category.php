@@ -6,7 +6,7 @@ $category = get_queried_object();
 $ancestors = get_ancestors($category->term_id, 'category');
 // 如果已经是顶级分类，则直接获取顶级分类的slug
 $top_category = empty($ancestors) ? $category : get_term(end($ancestors), 'category');
-$category_slug = $top_category->slug; // 获取顶级分类的slug
+$category_slug = $top_category->slug;
 
 $template = match (true) {
     str_contains($category_slug, 'product') => 'product',
