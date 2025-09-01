@@ -389,18 +389,21 @@
     overflow: hidden;
 }
 
+.yx-card-title h3 {
+    color: white;
+}
+
 .yx-prod-system {
     overflow: hidden;
     border-radius: 20px;
 }
 
-.yx-card-title h3,
 .yx-card-customized h3 {
     color: var(--text-color-default);
 }
 
 .yx-card-title p {
-    color: var(--text-color-primary);
+    color: rgba(255, 255, 255, .8);
 }
 
 .yx-card-image img {
