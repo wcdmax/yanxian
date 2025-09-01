@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="uk-width-3-4">
-        <ul uk-grid class="uk-grid-small uk-grid-match yx-prod-list uk-child-width-1-3">
+        <ul uk-grid class="uk-grid-small uk-grid-match yx-prod-list uk-child-width-1-3" uk-scrollspy="cls: uk-animation-scale-up; target: > li; delay: 100;">
             <li class="yx-prod-item">
                 <a target="_blank" title="研显G2工业触控一体机" href="#" class="uk-link-text uk-padding-small uk-border-rounded uk-box-shadow-small uk-text-decoration-none">
                     <div class="yx-prod-img uk-overflow-hidden">
