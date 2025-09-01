@@ -958,3 +958,28 @@
     visibility: visible;
     transform: translateY(-50%) translateX(-10px);
 }
+
+/* search搜索框 */
+.yx-sidebar-search button:hover {
+    transform: scale(1.1);
+    color: var(--theme-color) !important;
+}
+
+.yx-sidebar-search button {
+    transition: transform 0.3s ease-in-out,
+        color 0.3s ease-in-out;
+}
+
+.yx-sidebar-search input::placeholder {
+    font-size: .875rem;
+    font-family: "HarmonyOS_Sans_SC_Light";
+}
+
+.yx-sidebar-search input:focus {
+    border-color: var(--theme-color) !important;
+    outline-color: var(--theme-color) !important;
+}
+
+.yx-sidebar-search input:focus+.uk-search-icon-flip {
+    color: var(--theme-color);
+}
