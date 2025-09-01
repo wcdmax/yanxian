@@ -53,6 +53,24 @@
     animation: btn-wave 1.5s infinite;
 }
 
+@keyframes yx-animation {
+    0% {
+        background-size: 100%;
+    }
+
+    80% {
+        background-size: 110%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+.yx-animation-background {
+    animation: yx-animation 20s infinite;
+}
+
 .yx-button-primary::before {
     top: 50%;
     height: 0;
