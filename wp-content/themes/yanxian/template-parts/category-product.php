@@ -120,7 +120,7 @@
         </ul>
     </div>
 </div>
-<hr>
 <div class="uk-flex uk-margin uk-flex-center">
+    <hr>
     <?php echo do_blocks('<!-- wp:pattern {"slug":"yanxian/pagination"} /-->'); ?>
 </div>
