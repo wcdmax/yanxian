@@ -1045,6 +1045,34 @@
     box-shadow: 0 4px 12px rgba(33, 78, 145, 0.15);
 }
 
+/* 分页样式 */
+.yx-pagination>*>:hover {
+    color: var(--theme-color);
+}
+
+.yx-pagination>li span.current {
+    color: var(--theme-color);
+}
+
+.yx-pagination>li:first-child {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #dedede;
+}
+
+.yx-pagination>li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.yx-pagination a {
+    color: var(--text-color-default);
+}
+
+.yx-pagination>li:nth-child(n+2) {
+    border-top: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+
 /* 产品分类 */
 .yx-prod-info p {
     margin: unset;
