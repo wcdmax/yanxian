@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="uk-width-1-3">
-                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
+                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden uk-background-cover" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/showcase.jpg'); ?>');">
                     <div class="yx-card-title" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > *; delay: 100">
                         <h3>工控一体机</h3>
                         <p>Industrial All in One PC</p>
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="uk-width-1-3">
-                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
+                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden uk-background-cover" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/showcase.jpg'); ?>');">
                     <div class="yx-card-title" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > *; delay: 200">
                         <h3>工业触摸屏</h3>
                         <p>Industrial Display</p>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="uk-width-1-3">
-                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
+                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden uk-background-cover" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/showcase.jpg'); ?>');">
                     <div class="yx-card-title" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > *; delay: 300">
                         <h3>商用广告机</h3>
                         <p>Commercial Advertising Machine</p>
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="uk-width-1-3">
-                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden">
+                <div class="uk-card uk-padding yx-card-body uk-card-default yx-card-category uk-overflow-hidden uk-background-cover" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/showcase.jpg'); ?>');">
                     <div class="yx-card-title" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > *; delay: 400">
                         <h3>工业平板电脑</h3>
                         <p>Industrial Tablet PC</p>
