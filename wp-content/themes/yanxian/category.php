@@ -40,8 +40,7 @@ $template = match (true) {
 </section>
 <section class="uk-section">
     <div class="uk-container uk-container-large">
-        <h2>分类页面</h2>
-        <h4>工控一体机产品</h4>
+        <?php get_template_part('template-parts/category', $template); ?>
     </div>
 </section>
 <?php get_footer();
