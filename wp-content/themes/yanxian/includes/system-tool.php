@@ -460,12 +460,12 @@ add_action('admin_menu', function () {
                         <li>修改主题或插件代码后</li>
                         <li>更新PHP文件后代码未生效时</li>
                     </ul>
+                    <p class="cache-info">说明：OPcache是PHP的操作码缓存，清理后会重新编译PHP文件</p>
                     <div class="card-actions">
                         <form method="post" action="">
                             <?php wp_nonce_field('flush_opcache'); ?>
                             <input type="submit" name="flush_opcache" value="清理OPcache缓存" class="button button-primary" onclick="return confirm('确定要清理OPcache缓存吗？')" />
                         </form>
-                        <p class="cache-info">说明：OPcache是PHP的操作码缓存，清理后会重新编译PHP文件</p>
                     </div>
                 </div>
 
