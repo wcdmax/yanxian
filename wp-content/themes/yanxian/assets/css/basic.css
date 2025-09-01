@@ -58,7 +58,7 @@
         background-size: 100%;
     }
 
-    80% {
+    50% {
         background-size: 110%;
     }
 
@@ -68,7 +68,7 @@
 }
 
 .yx-animation-background {
-    animation: yx-animation 20s infinite;
+    animation: yx-animation 30s infinite;
 }
 
 .yx-button-primary::before {
