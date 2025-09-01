@@ -345,7 +345,7 @@ add_action('admin_menu', function () {
                 <!-- 全部缓存清理工具 -->
                 <div class="card">
                     <h2 class="title">清理所有缓存</h2>
-                    <p>一键清理所有类型的缓存，包括WordPress内置缓存、外部缓存服务和OPcache。在以下情况下建议使用此功能：</p>
+                    <p>一键清理所有类型的缓存，包括WordPress内置缓存、外部缓存服务和OPcache：</p>
                     <ul class="card-list">
                         <li>进行重大更新后</li>
                         <li>网站全面清理时</li>
@@ -435,7 +435,13 @@ add_action('admin_menu', function () {
                 <!-- Memcached缓存清理工具 -->
                 <div class="card">
                     <h2 class="title">Memcached缓存清理</h2>
-                    <p>安全清理当前网站的Memcached缓存数据（不影响其他网站）。在以下情况下建议使用此功能：</p>
+                    <p>
+                        清理当前网站（WP_CACHE_KEY_SALT:
+                        <code>
+                            <?php echo defined('WP_CACHE_KEY_SALT') ? esc_html(WP_CACHE_KEY_SALT) : '<span style="color:red;">未定义</span>'; ?>
+                        </code>
+                        ）的Memcached缓存：
+                    </p>
                     <ul class="card-list">
                         <li>缓存键前缀冲突时</li>
                         <li>网站数据更新不及时时</li>
