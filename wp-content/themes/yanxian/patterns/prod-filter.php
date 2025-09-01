@@ -2,8 +2,8 @@
 
 /**
  * Title: 条件筛选
- * Slug: yanxian/prod-filter
- * Categories: yanxian, prod-filter
+ * Slug: yanxian/filter
+ * Categories: yanxian, filter
  * Description: 显示一个条件筛选组件，用户可以选择不同的筛选条件
  */
 ?>
