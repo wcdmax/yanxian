@@ -20,28 +20,40 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // 新闻轮播图
-    new Swiper(document.getElementById('news-slide'), {
-        loop: true,
-        speed: 2000,
-        effect: 'fade',
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            clickable: true,
-            el: '.swiper-pagination',
-        },
-        on: {
-            init: function () {
-                swiperAnimateCache(this);
-                swiperAnimate(this);
+    const newsSlideElement = document.getElementById('news-slide');
+    if (newsSlideElement) {
+        const newsSwiper = new Swiper(newsSlideElement, {
+            loop: true,
+            speed: 2000,
+            effect: 'fade',
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
             },
-            slideChangeTransitionStart: function (swiper) {
-                swiperAnimate(swiper);
+            pagination: {
+                clickable: true,
+                el: '.swiper-pagination',
+            },
+            on: {
+                init: function () {
+                    swiperAnimateCache(this);
+                    swiperAnimate(this);
+                },
+                slideChangeTransitionStart: function (swiper) {
+                    swiperAnimate(swiper);
+                }
             }
-        }
-    });
+        });
+
+        // 新闻轮播图鼠标悬停暂停功能
+        newsSlideElement.addEventListener('mouseenter', function() {
+            newsSwiper.autoplay.stop();
+        });
+        
+        newsSlideElement.addEventListener('mouseleave', function() {
+            newsSwiper.autoplay.start();
+        });
+    }
 
     // Scroll Down 功能
     const scrollDownElement = document.querySelector('.yx-swiper-scroll-down');
