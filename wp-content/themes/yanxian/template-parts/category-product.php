@@ -7,7 +7,7 @@
             ?>
         </div>
         <div class="uk-margin uk-margin-remove-top">
-            <?php echo do_blocks('<!-- wp:pattern {"slug":"yanxian/prod-filter"} /-->'); ?>
+            <?php echo do_blocks('<!-- wp:pattern {"slug":"yanxian/filter"} /-->'); ?>
         </div>
         <div>
             <?php echo do_blocks('<!-- wp:pattern {"slug":"yanxian/tags"} /-->'); ?>
