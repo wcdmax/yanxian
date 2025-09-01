@@ -1042,6 +1042,7 @@
 .yx-tags-list a:hover {
     color: var(--text-color-primary);
     border: 1px solid var(--theme-color);
+    box-shadow: 0 4px 12px rgba(33, 78, 145, 0.15);
 }
 
 /* 产品分类 */
