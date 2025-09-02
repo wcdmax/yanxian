@@ -33,7 +33,9 @@
 <section class="uk-section uk-background-top-left" style="background-image: url('//static.yxtouch.com/assets/images/bg-product.jpg');">
     <div class="uk-container uk-container-large">
         <h2 class="uk-section-title" uk-parallax="opacity: 0,1; x: -100,0; end: 50vh + 50%">产品中心</h2>
-        <p class="uk-section-title-desc" uk-parallax="opacity: 0,1; x: 100,0; end: 50vh + 50%">源头厂家，提供全方位多行业定制方案，满足您的各种需求</p>
+        <p class="uk-section-title-desc" uk-parallax="opacity: 0,1; x: 100,0; end: 50vh + 50%">源头厂家，提供全方位多行业定制方案，满足您的各种需求
+            <a href="/product" target="_blank" class="uk-flex yx-link-more uk-flex-middle uk-float-right uk-text-decoration-none" uk-scrollspy="cls: uk-animation-scale-up; delay: 300">MORE<span uk-icon="icon: chevron-right"></span></a>
+        </p>
         <hr>
         <div uk-grid id="product" class="uk-grid-small uk-grid-match" uk-scrollspy="cls: uk-animation-scale-up; target: .yx-card-image>img; delay: 100;">
             <div class="uk-width-2-3">
@@ -133,7 +135,9 @@
 <section class="uk-section yx-solution-section">
     <div class="uk-container uk-container-large">
         <h2 class="uk-section-title" uk-parallax="opacity: 0,1; x: -100,0; end: 50vh + 50%">解决方案</h2>
-        <p class="uk-section-title-desc" uk-parallax="opacity: 0,1; x: 100,0; end: 50vh + 50%">以技术为驱动，提供成熟的行业解决方案，500强信赖的工控品牌</p>
+        <p class="uk-section-title-desc" uk-parallax="opacity: 0,1; x: 100,0; end: 50vh + 50%">以技术为驱动，提供成熟的行业解决方案，500强信赖的工控品牌
+            <a href="javascript:;" target="_blank" class="uk-flex yx-link-more uk-flex-middle uk-float-right uk-text-decoration-none" uk-scrollspy="cls: uk-animation-scale-up; delay: 300">MORE<span uk-icon="icon: chevron-right"></span></a>
+        </p>
         <hr>
         <ul class="uk-flex yx-solution-list" uk-scrollspy="cls: uk-animation-scale-up; target: > li; delay: 200">
             <li class="active yx-solution-item uk-background-cover" style="background-image: url(//static.yxtouch.com/assets/images/5770c.jpg);">
@@ -217,7 +221,9 @@
 <section class="uk-section uk-background-cover" style="background-image: url('//static.yxtouch.com/assets/images/bg-news.jpg');">
     <div class="uk-container uk-container-large">
         <h2 class="uk-section-title" uk-parallax="opacity: 0,1; x: -100,0; end: 50vh + 50%">新闻资讯</h2>
-        <p class="uk-section-title-desc" uk-parallax="opacity: 0,1; x: 100,0; end: 50vh + 50%">关注研显触控，获取最新行业资讯</p>
+        <p class="uk-section-title-desc" uk-parallax="opacity: 0,1; x: 100,0; end: 50vh + 50%">关注研显触控，获取最新行业资讯
+            <a href="/news" target="_blank" class="uk-flex yx-link-more uk-flex-middle uk-float-right uk-text-decoration-none" uk-scrollspy="cls: uk-animation-scale-up; delay: 300">MORE<span uk-icon="icon: chevron-right"></span></a>
+        </p>
         <hr>
         <div uk-grid class="uk-grid-small uk-grid-match">
             <div class="uk-width-2-5 yx-news-slider" uk-scrollspy="cls: uk-animation-slide-left; delay: 100">

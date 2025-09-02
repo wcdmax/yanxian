@@ -36,6 +36,7 @@
     display: -webkit-box !important
 }
 
+
 .yx-form-error.show {
     display: block;
 }
@@ -45,6 +46,17 @@
     color: #f0506e;
     font-size: 0.875rem;
     margin-top: 0.25rem;
+}
+.yx-link-more:hover>span {
+    transform: translateX(5px);
+}
+
+.yx-link-more {
+    color: var(--text-color-primary);
+}
+
+.yx-link-more>span {
+    transition: transform .3s ease-in-out;
 }
 
 .yx-button-primary:hover {
