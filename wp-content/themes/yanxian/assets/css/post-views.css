@@ -1,0 +1,30 @@
+.post-views-notice {
+    clear: both;
+    margin: 15px 0;
+}
+.post-views-wrapper {
+    width: 100%;
+    min-width: 80px;
+    position: relative;
+    display: inline-block;
+}
+.post-views-text {
+    width: inherit;
+}
+.post-views-text {
+    cursor: pointer;
+    padding: 2px 5px;
+    display: inline-block;
+}
+.post-views-text:hover {
+    border-radius: 3px;
+    background: #f0f0f0;
+}
+.post-views-input {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: inherit;
+    padding: 2px 5px;
+    position: absolute;
+}
