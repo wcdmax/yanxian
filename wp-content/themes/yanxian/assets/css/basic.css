@@ -36,6 +36,17 @@
     display: -webkit-box !important
 }
 
+.yx-form-error.show {
+    display: block;
+}
+
+.yx-form-error {
+    display: none;
+    color: #f0506e;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
 .yx-button-primary:hover {
     color: white;
     box-shadow: var(--yx-box-shadow);
