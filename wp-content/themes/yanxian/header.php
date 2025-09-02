@@ -8,15 +8,15 @@
     <meta name="keywords" content="研显触控,工控一体机,工业触摸屏,工业平板电脑">
     <meta name="description" content="研显触摸是集工控一体机、工业触摸屏、工业级主机研发、生产、销售于一体的高新技术企业。">
     <link rel="stylesheet" href="<?php echo get_theme_file_uri('/assets/css/basic.css'); ?>">
-    <link rel="stylesheet" href="<?php echo get_theme_file_uri('/assets/css/animate.min.css'); ?>">
+    <link rel="stylesheet" href="//static.yxtouch.com/assets/css/animate.min.css');">
     <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/basic.js'); ?>"></script>
     <?php if (is_front_page()): ?>
         <script type="text/javascript" language="javascript" src="<?php echo get_theme_file_uri('/assets/js/index.js'); ?>"></script>
     <?php endif; ?>
-    <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/uikit.min.js'); ?>"></script>
-    <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/uikit-icons.min.js'); ?>"></script>
-    <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/swiper-bundle.min.js'); ?>"></script>
-    <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/swiper.animate1.0.3.min.js'); ?>"></script>
+    <script type="text/javascript" lang="javascript" src="//static.yxtouch.com/assets/js/uikit.min.js"></script>
+    <script type="text/javascript" lang="javascript" src="//static.yxtouch.com/assets/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" lang="javascript" src="//static.yxtouch.com/assets/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" lang="javascript" src="//static.yxtouch.com/assets/js/swiper.animate1.0.3.min.js"></script>
     <?php wp_head(); ?>
 </head>
 
@@ -27,7 +27,7 @@
                 <div uk-navbar>
                     <div class="uk-navbar-left">
                         <a href="/" class="uk-logo uk-navbar-item">
-                            <img alt="研显触控" title="研显触控" uk-scrollspy="cls: uk-animation-scale-up;" src="<?php echo get_theme_file_uri('/assets/icons/logo.png'); ?>">
+                            <img alt="研显触控" title="研显触控" uk-scrollspy="cls: uk-animation-scale-up;" src="//static.yxtouch.com/assets/icons/logo.png">
                         </a>
                     </div>
                     <div class="uk-navbar-center">
@@ -44,7 +44,7 @@
                     <div class="uk-navbar-right yx-navbar-right">
                         <ul class="uk-navbar-nav">
                             <li class="uk-navbar-item" uk-scrollspy="cls: uk-animation-slide-top-small; delay: 800">
-                                <img alt="400电话" title="400电话" src="<?php echo get_theme_file_uri('/assets/icons/phone.png'); ?>">
+                                <img alt="400电话" title="400电话" src="//static.yxtouch.com/assets/icons/phone.png">
                                 <p class="yx-navbar-phone-number"></p>
                             </li>
                         </ul>

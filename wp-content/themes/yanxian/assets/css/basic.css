@@ -545,7 +545,7 @@
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: top left;
-    background-image: url('../images/bg-about.png');
+    background-image: url('//static.yxtouch.com/assets/images/bg-about.png');
 }
 
 .yx-about-section {
