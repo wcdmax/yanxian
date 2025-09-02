@@ -28,7 +28,7 @@ $template = match (true) {
 <!-- 分类Banner End -->
 <section class="uk-section uk-padding-remove uk-box-shadow-small">
     <div class="uk-container uk-container-large">
-        <div class="uk-flex uk-flex-middle uk-flex-between uk-padding-small uk-padding-remove-horizontal">
+        <div class="uk-flex uk-flex-middle uk-flex-between yx-category-navbar">
             <!-- 二级分类菜单 Start -->
             <?php echo do_blocks('<!-- wp:pattern {"slug":"yanxian/category-subnav"} /-->'); ?>
             <!-- 二级分类菜单 End -->
