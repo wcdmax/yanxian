@@ -47,6 +47,7 @@
     font-size: 0.875rem;
     margin-top: 0.25rem;
 }
+
 .yx-link-more:hover>span {
     transform: translateX(5px);
 }
@@ -861,6 +862,10 @@
 }
 
 /* 二级分类菜单 */
+.yx-category-navbar {
+    padding: 20px 0;
+}
+
 .yx-subnav > li:first-child {
     padding-left: unset;
 }
@@ -898,7 +903,7 @@
     z-index: 1;
     height: 3px;
     content: "";
-    bottom: -30px;
+    bottom: -20px;
     display: block;
     position: absolute;
     border-radius: 2px;
@@ -907,7 +912,6 @@
     transform-origin: center;
     background: var(--text-color-primary);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 /* 面包屑导航 */
