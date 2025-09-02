@@ -223,6 +223,11 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
+.uk-light .yx-navbar-nav>li.current-menu-item>a,
+.uk-light .yx-navbar-nav>li.current-menu-parent>a {
+    color: white;
+}
+
 .uk-light .yx-navbar-right img {
     filter: brightness(0) invert(1);
 }
@@ -256,6 +261,11 @@
 }
 
 .uk-navbar-sticky .yx-navbar-nav>li.uk-active>a {
+    color: var(--text-color-primary);
+}
+
+.uk-navbar-sticky .yx-navbar-nav>li.current-menu-item>a,
+.uk-navbar-sticky .yx-navbar-nav>li.current-menu-parent>a {
     color: var(--text-color-primary);
 }
 
