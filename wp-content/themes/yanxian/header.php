@@ -8,7 +8,7 @@
     <meta name="keywords" content="研显触控,工控一体机,工业触摸屏,工业平板电脑">
     <meta name="description" content="研显触摸是集工控一体机、工业触摸屏、工业级主机研发、生产、销售于一体的高新技术企业。">
     <link rel="stylesheet" href="<?php echo get_theme_file_uri('/assets/css/basic.css'); ?>">
-    <link rel="stylesheet" href="//static.yxtouch.com/assets/css/animate.min.css');">
+    <link rel="stylesheet" href="//static.yxtouch.com/assets/css/animate.min.css">
     <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/basic.js'); ?>"></script>
     <?php if (is_front_page()): ?>
         <script type="text/javascript" language="javascript" src="<?php echo get_theme_file_uri('/assets/js/index.js'); ?>"></script>
