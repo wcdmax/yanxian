@@ -15,7 +15,7 @@ $template = match (true) {
 };
 ?>
 <!-- 分类Banner Start -->
-<section class="uk-flex uk-section uk-flex-middle uk-height-large uk-background-cover yx-animation-background" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/banner.jpg'); ?>');">
+<section class="uk-flex uk-section uk-flex-middle uk-height-large uk-background-cover yx-animation-background" style="background-image: url('//static.yxtouch.com/assets/images/banner.jpg');">
     <div class="uk-container uk-container-large">
         <div uk-grid class="uk-grid-small uk-grid-match uk-width-expand uk-child-width-1-2">
             <div>

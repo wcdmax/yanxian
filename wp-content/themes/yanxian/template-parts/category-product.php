@@ -18,7 +18,7 @@
             <li class="yx-prod-item">
                 <a target="_blank" title="研显G2工业触控一体机" href="#" class="uk-link-text uk-padding-small uk-border-rounded uk-box-shadow-small uk-text-decoration-none">
                     <div class="yx-prod-img uk-overflow-hidden">
-                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="<?php echo get_theme_file_uri('/assets/images/g2.png') ?>">
+                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="//static.yxtouch.com/assets/images/g2.png">
                     </div>
                     <div class="yx-prod-info">
                         <h4 class="uk-text-truncate">研显G2工业触控一体机</h4>
@@ -35,7 +35,7 @@
             <li class="yx-prod-item">
                 <a target="_blank" title="研显G2工业触控一体机" href="#" class="uk-link-text uk-padding-small uk-border-rounded uk-box-shadow-small uk-text-decoration-none">
                     <div class="yx-prod-img uk-overflow-hidden">
-                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="<?php echo get_theme_file_uri('/assets/images/g2.png') ?>">
+                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="//static.yxtouch.com/assets/images/g2.png">
                     </div>
                     <div class="yx-prod-info">
                         <h4 class="uk-text-truncate">研显G2工业触控一体机</h4>
@@ -52,7 +52,7 @@
             <li class="yx-prod-item">
                 <a target="_blank" title="研显G2工业触控一体机" href="#" class="uk-link-text uk-padding-small uk-border-rounded uk-box-shadow-small uk-text-decoration-none">
                     <div class="yx-prod-img uk-overflow-hidden">
-                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="<?php echo get_theme_file_uri('/assets/images/g2.png') ?>">
+                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="//static.yxtouch.com/assets/images/g2.png">
                     </div>
                     <div class="yx-prod-info">
                         <h4 class="uk-text-truncate">研显G2工业触控一体机</h4>
@@ -69,7 +69,7 @@
             <li class="yx-prod-item">
                 <a target="_blank" title="研显G2工业触控一体机" href="#" class="uk-link-text uk-padding-small uk-border-rounded uk-box-shadow-small uk-text-decoration-none">
                     <div class="yx-prod-img uk-overflow-hidden">
-                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="<?php echo get_theme_file_uri('/assets/images/g2.png') ?>">
+                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="//static.yxtouch.com/assets/images/g2.png">
                     </div>
                     <div class="yx-prod-info">
                         <h4 class="uk-text-truncate">研显G2工业触控一体机</h4>
@@ -86,7 +86,7 @@
             <li class="yx-prod-item">
                 <a target="_blank" title="研显G2工业触控一体机" href="#" class="uk-link-text uk-padding-small uk-border-rounded uk-box-shadow-small uk-text-decoration-none">
                     <div class="yx-prod-img uk-overflow-hidden">
-                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="<?php echo get_theme_file_uri('/assets/images/g2.png') ?>">
+                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="//static.yxtouch.com/assets/images/g2.png">
                     </div>
                     <div class="yx-prod-info">
                         <h4 class="uk-text-truncate">研显G2工业触控一体机</h4>
@@ -103,7 +103,7 @@
             <li class="yx-prod-item">
                 <a target="_blank" title="研显G2工业触控一体机" href="#" class="uk-link-text uk-padding-small uk-border-rounded uk-box-shadow-small uk-text-decoration-none">
                     <div class="yx-prod-img uk-overflow-hidden">
-                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="<?php echo get_theme_file_uri('/assets/images/g2.png') ?>">
+                        <img alt="研显G2工业触控一体机" title="研显G2工业触控一体机" src="//static.yxtouch.com/assets/images/g2.png">
                     </div>
                     <div class="yx-prod-info">
                         <h4 class="uk-text-truncate">研显G2工业触控一体机</h4>

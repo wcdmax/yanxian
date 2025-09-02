@@ -13,7 +13,7 @@
     <hr>
     <ul uk-accordion="multiple: true" uk-scrollspy="cls: uk-animation-scale-up; target: > li > a; delay: 100">
         <li class="uk-open">
-            <a href="#" class="uk-accordion-title"><img alt="平台架构" src="<?php echo get_theme_file_uri('/assets/icons/platform_architecture.png') ?>">平台架构</a>
+            <a href="#" class="uk-accordion-title"><img alt="平台架构" src="//static.yxtouch.com/assets/icons/platform_architecture.png">平台架构</a>
             <div class="uk-accordion-content">
                 <form>
                     <ul class="uk-list uk-list-bullet">
@@ -25,7 +25,7 @@
             </div>
         </li>
         <li>
-            <a href="#" class="uk-accordion-title"><img alt="操作系统" src="<?php echo get_theme_file_uri('/assets/icons/operating_system.png') ?>">操作系统</a>
+            <a href="#" class="uk-accordion-title"><img alt="操作系统" src="//static.yxtouch.com/assets/icons/operating_system.png">操作系统</a>
             <div class="uk-accordion-content">
                 <form>
                     <ul class="uk-list uk-list-bullet">
@@ -40,7 +40,7 @@
             </div>
         </li>
         <li>
-            <a href="#" class="uk-accordion-title"><img alt="屏幕尺寸" src="<?php echo get_theme_file_uri('/assets/icons/screen_size.png') ?>">屏幕尺寸</a>
+            <a href="#" class="uk-accordion-title"><img alt="屏幕尺寸" src="//static.yxtouch.com/assets/icons/screen_size.png">屏幕尺寸</a>
             <div class="uk-accordion-content">
                 <form>
                     <ul class="uk-list uk-list-bullet">
@@ -66,7 +66,7 @@
             </div>
         </li>
         <li>
-            <a href="#" class="uk-accordion-title"><img alt="触屏类型" src="<?php echo get_theme_file_uri('/assets/icons/touch_type.png') ?>">触屏类型</a>
+            <a href="#" class="uk-accordion-title"><img alt="触屏类型" src="//static.yxtouch.com/assets/icons/touch_type.png">触屏类型</a>
             <div class="uk-accordion-content">
                 <form>
                     <ul class="uk-list uk-list-bullet">
@@ -79,7 +79,7 @@
             </div>
         </li>
         <li>
-            <a href="#" class="uk-accordion-title"><img alt="中央处理器" src="<?php echo get_theme_file_uri('/assets/icons/processor.png') ?>">中央处理器</a>
+            <a href="#" class="uk-accordion-title"><img alt="中央处理器" src="//static.yxtouch.com/assets/icons/processor.png">中央处理器</a>
             <div class="uk-accordion-content">
                 <form>
                     <ul class="uk-list uk-list-bullet">
