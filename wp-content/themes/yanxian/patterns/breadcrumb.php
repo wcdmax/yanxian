@@ -7,7 +7,7 @@
  */
 ?>
 
-<nav aria-label="Breadcrumb" class="uk-padding-small uk-padding-remove-horizontal uk-border-rounded uk-background-default">
+<nav aria-label="Breadcrumb" class="uk-border-rounded uk-background-default">
     <ul class="uk-breadcrumb yx-breadcrumb uk-margin-remove-bottom">
         <li><a title="首页" href="<?php echo home_url(); ?>"><span class="yx-text-primary" uk-icon="icon: home; ratio: 0.8"></span> 首页</a></li>
         <?php
