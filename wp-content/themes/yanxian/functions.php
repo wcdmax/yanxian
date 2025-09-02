@@ -7,6 +7,7 @@
  */
 require_once 'includes/form.php';
 require_once 'includes/site-info.php';
+require_once "includes/post-views.php";
 require_once 'includes/system-tool.php';
 require_once 'includes/class-main-menu-walker.php';
 require_once 'includes/class-footer-menu-walker.php';
@@ -198,6 +199,21 @@ add_action('wp_update_nav_menu_item', function ($menu_id, $menu_item_db_id) {
         );
     }
 }, 10, 2);
+
+// 增加文章阅读量
+add_action('save_post', function ($post_id, $post) {
+    if (!current_user_can('edit_post', $post_id)) return;
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
+
+    // 添加或更新自定义字段
+    $meta_key = 'post_views_count';
+    $meta_value = absint(get_post_meta($post_id, $meta_key, true));
+
+    if ($meta_value == 0) {
+        $meta_value = rand(369, 1024);
+        add_post_meta($post_id, $meta_key, $meta_value, true);
+    }
+}, 10, 3);
 
 /**
  * 添加菜单连接打开方式
@@ -450,6 +466,24 @@ add_action('publish_post', function ($post_id) {
         $url_push->push_url_to_baidu();
     }
 }, 10, 1);
+
+/**
+ * 添加菜单自定义链接ID字段
+ */
+add_action('wp_nav_menu_item_custom_fields', function ($item_id, $item) {
+    if ($item->type !== 'custom') {
+        return;
+    }
+    $id = get_post_meta($item_id, '_menu_item_id', true);
+?>
+    <p class="description description-wide">
+        <label for="edit-menu-item-id-<?php echo $item_id; ?>">
+            菜单ID<br>
+            <input type="text" id="edit-menu-item-id-<?php echo $item_id; ?>" class="widefat edit-menu-item-id" name="menu-item-id[<?php echo $item_id; ?>]" value="<?php echo esc_attr($id); ?>">
+        </label>
+    </p>
+<?php
+}, 10, 2);
 
 /**
  * 修改图片和图库区块的HTML输出
