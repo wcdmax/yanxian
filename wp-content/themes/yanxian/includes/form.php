@@ -406,7 +406,7 @@ add_action('wp_enqueue_scripts', function () {
     // 引入脚本
     wp_enqueue_script(
         'post-form',
-        '//static.szyocon.com/assets/js/form.js',
+        '//static.yxtouch.com/assets/js/form.js',
         array(),
         get_bloginfo('version'),
         true
