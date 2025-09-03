@@ -1,5 +1,6 @@
-@import "uikit.min.css";
-@import "swiper-bundle.min.css";
+@import "//static.yxtouch.com/assets/css/uikit.min.css";
+@import "//static.yxtouch.com/assets/css/animate.min.css";
+@import "//static.yxtouch.com/assets/css/swiper-bundle.min.css";
 
 :root {
     --theme-color: #214e91;
@@ -1202,4 +1203,135 @@
 
 .yx-prod-item>a:hover {
     box-shadow: 0 8px 24px rgba(33, 78, 145, 0.15);
+}
+
+/* 产品详情页 */
+.thumb-swiper {
+    height: 548.23px;
+    overflow: hidden;
+    position: relative;
+}
+
+.yx-prod-gallery {
+    position: relative;
+}
+
+.yx-prod-gallery-container {
+    position: relative;
+}
+    
+@keyframes show-zoomimg {
+    0% {
+        right: 0;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        right: 16px;
+    }
+}
+
+.yx-prod-gallery-thumb-item {
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.yx-prod-gallery-thumb-item>img {
+    width: 146.5px;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.yx-prod-gallery-bigimg>video {
+    width: 800px;
+    height: 548.23px;
+    border-radius: 5px;
+    background: black;
+}
+
+.yx-prod-gallery-bigimg img {
+    border-radius: 5px;
+    position: relative;
+    outline: 1px solid var(--theme-color);
+}
+
+.yx-thumb-active .yx-prod-gallery-thumb-item {
+    border-radius: 5px;
+    border: 1px solid var(--theme-color);
+}
+
+.yk-prod-gallery-magnifier {
+    top: 0;
+    left: 100%;
+    z-index: 100;
+    display: none;
+    width: 548.23px;
+    height: 548.23px;
+    margin-left: 20px;
+    position: absolute;
+    border-radius: 5px;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    outline: 1px solid var(--theme-color);
+    box-shadow: 0 0 20px rgba(33, 78, 145, 0.35);
+}
+
+.yx-prod-gallery-container:hover .yx-prod-gallery-zoomimg {
+    animation: show-zoomimg 0.3s ease 0s 1 forwards;
+}
+
+.yx-prod-gallery-zoomimg {
+    opacity: 0;
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    top: calc(50% - 32px);
+    flex-direction: column;
+}
+
+.yx-prod-gallery-prenext {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .36);
+}
+
+.yx-prod-gallery-prenext:hover {
+    background: rgba(0, 0, 0, .56);
+}
+
+.yx-prod-gallery-prenext:first-of-type {
+    border-radius: 50px 50px 0 0;
+}
+
+.yx-prod-gallery-prenext:nth-of-type(2) {
+    transform: rotate(180deg);
+    border-radius: 50px 50px 0 0;
+}
+
+.yx-prod-gallery-prenext:first-of-type::after {
+    bottom: 0;
+    width: 16px;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: hsla(0, 0%, 100%, .12);
+}
+
+.thumb-video .yx-prod-gallery-thumb-item::after {
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 36px;
+    height: 36px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="rgba(0,0,0,0.5)"/><polygon points="10,8 16,12 10,16" fill="white"/></svg>') no-repeat center center / contain;
 }
