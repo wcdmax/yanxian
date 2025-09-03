@@ -1,3 +1,13 @@
+<?php
+$top_category = null;
+$categories = get_the_category();
+if (!empty($categories) && isset($categories[0])) {
+    $top_category = $categories[0];
+    while ($top_category->parent) {
+        $top_category = get_category($top_category->parent);
+    }
+}
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -12,6 +22,9 @@
     <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/basic.js'); ?>"></script>
     <?php if (is_front_page()): ?>
         <script type="text/javascript" language="javascript" src="<?php echo get_theme_file_uri('/assets/js/index.js'); ?>"></script>
+    <?php endif; ?>
+    <?php if (is_single() && $top_category && $top_category->slug === 'product'): ?>
+    <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/prod-magnifier.js'); ?>"></script>
     <?php endif; ?>
     <script type="text/javascript" lang="javascript" src="//static.yxtouch.com/assets/js/uikit.min.js"></script>
     <script type="text/javascript" lang="javascript" src="//static.yxtouch.com/assets/js/uikit-icons.min.js"></script>
