@@ -20,8 +20,6 @@ register_activation_hook(__FILE__, function () {
     ]);
 });
 
-
-
 // 添加短信配置菜单
 add_action('admin_menu', function () {
     add_submenu_page(
