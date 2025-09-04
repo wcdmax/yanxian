@@ -32,9 +32,9 @@
         <button uk-close type="button" class="uk-modal-close-default"></button>
         <?php
             set_query_var('is_modal', true);
-            set_query_var('id', 'global-form');
             set_query_var('is_contact', false);
             set_query_var('form_title', '免费借测');
+            set_query_var('form_id', 'global-form');
             echo do_blocks('<!-- wp:pattern {"slug":"yanxian/form"} /-->');
         ?>
     </div>
