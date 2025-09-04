@@ -153,5 +153,81 @@ document.addEventListener('DOMContentLoaded', function () {
             slides[newIndex].classList.add('yx-thumb-active');
         });
     }
-    
+
+    // 产品详情tab切换
+    const switcherEl = document.querySelector('.yx-prod-tab');
+    if (switcherEl) {
+        const tabs = UIkit.switcher(switcherEl);
+        switcherEl.querySelectorAll('li a').forEach((link, index) => {
+            // 阻止默认行为
+            link.addEventListener('click', (e) => e.preventDefault());
+            // 显示对应标签
+            link.addEventListener('mouseenter', () => tabs.show(index));
+        });
+    }
+
+    // 监听元素滚动
+    let observer = null;
+
+    // 右侧信息卡片
+    const productInfo = document.querySelector('.yx-prod-info');
+    // 操作按钮区域
+    const productActions = document.querySelector('.yx-prod-actions');
+    // 下方详情区块
+    const detailsSection = document.getElementById('yx-prod-details');
+
+    // 禁止滚动事件传递到页面
+    productInfo.addEventListener('wheel', function (e) {
+        if (productInfo.style.position === 'fixed') {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+    }, { passive: false });
+
+    // 监听元素滚动
+    observer = new IntersectionObserver((mutationsList) => {
+        mutationsList.forEach(mutation => {
+            if (mutation.isIntersecting) {
+                // 信息卡片进入视口，取消吸顶
+                productInfo.removeAttribute('style');
+                // 恢复按钮区域的原始样式
+                if (productActions) {
+                    productActions.removeAttribute('style');
+                }
+                window.removeEventListener('scroll', handleFixedLimit, true);
+            } else {
+                // 信息卡片离开视口顶部，吸顶
+                productInfo.style.width = '420px';
+                productInfo.style.padding = '20px';
+                productInfo.style.position = 'fixed';
+                productInfo.style.boxSizing = 'border-box';
+                productInfo.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+                // 设置按钮区域的margin为0
+                if (productActions) {
+                    productActions.style.marginTop = '0';
+                    productActions.style.marginBottom = '0';
+                }
+                window.addEventListener('scroll', handleFixedLimit, true);
+                handleFixedLimit();
+            }
+        });
+    }, { root: null, rootMargin: '0px', threshold: 0 });
+
+    observer.observe(document.getElementById('yx-prod-gallery'));
+
+    // 限制信息卡片不超出详情区底部
+    function handleFixedLimit() {
+        if (productInfo.style.position === 'fixed') {
+            const detailsRect = detailsSection.getBoundingClientRect();
+            const infoHeight = productInfo.offsetHeight;
+            const minTop = 100;
+            let top = minTop;
+            // 如果吸顶后超出详情区底部
+            if (top + infoHeight > detailsRect.bottom) {
+                productInfo.style.top = (detailsRect.bottom - infoHeight) + 'px';
+            } else {
+                productInfo.style.top = top + 'px';
+            }
+        }
+    }
 });

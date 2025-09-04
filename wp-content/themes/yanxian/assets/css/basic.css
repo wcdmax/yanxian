@@ -1441,3 +1441,47 @@
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg t='1745653166839' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='5001' width='20' height='20'%3E%3Cpath d='M512 64C264.8 64 64 264.8 64 512s200.8 448 448 448 448-200.8 448-448S759.2 64 512 64zM428 718.4l-45.6 45.6-45.6-45.6-116-117.6 45.6-45.6L383.2 672l367.2-367.2 45.6 45.6-368 368z' p-id='5002' fill='%23214e91'%3E%3C/path%3E%3C/svg%3E");
 }
+
+/* 产品详情部分 */
+.yx-prod-info {
+    box-sizing: border-box;
+}
+
+.yx-prod-tab {
+    margin-left: unset;
+    border-bottom: 1px solid #f0f3f5;
+}
+
+.yx-prod-content img {
+    width: 100%;
+}
+
+.yx-prod-tab>li:first-child {
+    padding-left: unset;
+}
+
+.yx-prod-tab>li>a {
+    padding-bottom: 10px;
+    font-size: 1.25rem !important;
+}
+
+.yx-prod-tab>.uk-active>a {
+    margin-bottom: -1px;
+    border-bottom: 1px solid var(--theme-color);
+}
+
+@keyframes yx-prod-info-fixed {
+    0% {
+        opacity: 0;
+        transform: translate(250px, -20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(250px, 0);
+    }
+}
+
+.yx-prod-info[style*="position: fixed"] {
+    animation: yx-prod-info-fixed 0.5s ease-out forwards;
+}

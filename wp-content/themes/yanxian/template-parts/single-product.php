@@ -1,4 +1,4 @@
-<div uk-grid class="uk-grid-small uk-grid-large uk-child-width-1-1 uk-child-width-1-2@m">
+<div uk-grid id="yx-prod-gallery" class="uk-grid-small uk-grid-large uk-child-width-1-1 uk-child-width-1-2@m">
     <!-- 产品相册 Start -->
     <div>
         <div class="uk-flex uk-grid-small yx-prod-gallery">
@@ -54,7 +54,7 @@
     </div>
     <!-- 产品信息 Start -->
     <div>
-        <div class="uk-border-rounded uk-background-default yx-prod-info">
+        <div class="yx-prod-info uk-border-rounded uk-background-default">
             <h3 uk-scrollspy="cls: uk-animation-scale-up; delay: 100;"><?php the_title(); ?></h3>
             <ul class="uk-subnav yx-prod-tags" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
                 <li><span>源头工厂</span></li>
@@ -88,3 +88,20 @@
         </div>
         <!-- 产品信息 End -->
     </div>
+</div>
+<div uk-grid id="yx-prod-details" class="uk-grid-large uk-grid-match">
+    <div class="uk-width-1-1 uk-width-2-3@m">
+        <ul class="uk-subnav yx-prod-tab" uk-switcher="animation: uk-animation-slide-right-medium, uk-animation-slide-left-medium">
+            <li><a href="javascript:void(0)">产品详情</a></li>
+            <li><a href="javascript:void(0)">技术参数</a></li>
+        </ul>
+        <div class="uk-switcher">
+            <div class="yx-prod-content">
+                <?php the_content(); ?>
+            </div>
+            <div class="yx-prod-parameters">
+                <h5>技术参数</h5>
+            </div>
+        </div>
+    </div>
+</div>
