@@ -114,10 +114,10 @@ document.querySelectorAll('form:not(#searchform)').forEach(form => {
         }
 
         try {
-            const response = await fetch(yk.ajaxurl, {
+            const response = await fetch(yx.ajaxurl, {
                 method: 'POST',
                 body: new URLSearchParams({
-                    nonce: yk.nonce,
+                    nonce: yx.nonce,
                     city: citySelect.value,
                     path: window.location.href,
                     name: nameInput.value.trim(),
