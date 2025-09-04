@@ -1462,10 +1462,11 @@
 
 .yx-prod-tab>li>a {
     padding-bottom: 10px;
-    font-size: 1.25rem !important;
+    font-size: 1rem !important;
 }
 
 .yx-prod-tab>.uk-active>a {
+    font-weight: bold;
     margin-bottom: -1px;
     border-bottom: 1px solid var(--theme-color);
 }
