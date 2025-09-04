@@ -1,0 +1,58 @@
+.smtp-receivers-input {
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    padding: 0 8px;
+    background: #fff;
+    box-shadow: 0 0 0 transparent;
+    min-height: 32px;
+    cursor: text;
+    width: 23.8em;
+}
+
+.smtp-receivers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.smtp-receiver-tag {
+    background: #2271b1;
+    border-radius: 2px;
+    padding: 0 6px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    color: #fff;
+    margin: 0;
+}
+
+.remove-receiver {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 0 0 4px;
+    margin-left: 4px;
+    font-size: 16px;
+    line-height: 1;
+    border-left: 1px solid rgba(255,255,255,0.3);
+}
+
+.remove-receiver:hover {
+    color: #fff;
+}
+
+#smtp_receivers_input {
+    min-width: 100px;
+    flex: 1;
+    font-size: 13px;
+}
+
+.smtp-receivers-input:focus-within {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: 2px solid transparent;
+} 

@@ -9,6 +9,7 @@ require_once 'includes/form.php';
 require_once 'includes/rest-api.php';
 require_once 'includes/site-info.php';
 require_once "includes/post-views.php";
+require_once 'includes/smtp-options.php';
 require_once 'includes/system-tool.php';
 require_once 'includes/class-main-menu-walker.php';
 require_once 'includes/class-footer-menu-walker.php';
