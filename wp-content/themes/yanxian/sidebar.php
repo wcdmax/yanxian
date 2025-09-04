@@ -26,3 +26,16 @@
         </li>
     </ul>
 </div>
+
+<div uk-modal id="modal-form" class="uk-flex-top">
+    <div class="uk-modal-dialog uk-modal-body uk-padding-small uk-border-rounded uk-margin-auto-vertical">
+        <button uk-close type="button" class="uk-modal-close-default"></button>
+        <?php
+            set_query_var('is_modal', true);
+            set_query_var('id', 'global-form');
+            set_query_var('is_contact', false);
+            set_query_var('form_title', '免费借测');
+            echo do_blocks('<!-- wp:pattern {"slug":"yanxian/form"} /-->');
+        ?>
+    </div>
+</div>
