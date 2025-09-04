@@ -1447,6 +1447,10 @@
     box-sizing: border-box;
 }
 
+.yx-prod-content {
+    color: var(--text-color-default);
+}
+
 .yx-prod-tab {
     margin-left: unset;
     border-bottom: 1px solid #f0f3f5;
