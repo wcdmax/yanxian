@@ -6,6 +6,7 @@
  * @package Yanxian
  */
 require_once 'includes/form.php';
+require_once 'includes/rest-api.php';
 require_once 'includes/site-info.php';
 require_once "includes/post-views.php";
 require_once 'includes/system-tool.php';
