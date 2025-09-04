@@ -5,7 +5,7 @@
                 <div uk-grid class="uk-grid-match uk-grid-match yx-news-list-item">
                     <div class="uk-width-2-3">
                         <div class="uk-flex uk-flex-column uk-flex-between">
-                            <a href="#" title="研显深化国产芯片应用实践，强化工业一体机本土方案能力" class="uk-link-text yx-news-list-title uk-text-decoration-none">
+                            <a target="_blank" href="/news/industry/102.html" title="研显深化国产芯片应用实践，强化工业一体机本土方案能力" class="uk-link-text yx-news-list-title uk-text-decoration-none">
                                 <h3>研显深化国产芯片应用实践，强化工业一体机本土方案能力</h3>
                                 <p class="uk-text-meta text-clamp-3 text-clamp-ellipsis">在自动化工厂里，不光是机器人在干活，屏幕也没闲着。生产数据、设备状态、工艺流程，全靠一块好用的工业级显示器把这些信息准确稳定地展示出来。如果屏幕不稳定，操作员再熟练也没辙。现场节奏快、环境复杂，对显示...</p>
                             </a>
@@ -36,7 +36,7 @@
                 <div uk-grid class="uk-grid-match uk-grid-match yx-news-list-item">
                     <div class="uk-width-2-3">
                         <div class="uk-flex uk-flex-column uk-flex-between">
-                            <a href="#" title="研显解读——工业平板电脑厂家芯片选型中AMD被边缘化的根本原因" class="uk-link-text yx-news-list-title uk-text-decoration-none">
+                            <a target="_blank" href="/news/industry/102.html" title="研显解读——工业平板电脑厂家芯片选型中AMD被边缘化的根本原因" class="uk-link-text yx-news-list-title uk-text-decoration-none">
                                 <h3>研显解读——工业平板电脑厂家芯片选型中AMD被边缘化的根本原因</h3>
                                 <p class="uk-text-meta text-clamp-3 text-clamp-ellipsis">在自动化工厂里，不光是机器人在干活，屏幕也没闲着。生产数据、设备状态、工艺流程，全靠一块好用的工业级显示器把这些信息准确稳定地展示出来。如果屏幕不稳定，操作员再熟练也没辙。现场节奏快、环境复杂，对显示...</p>
                             </a>
@@ -67,7 +67,7 @@
                 <div uk-grid class="uk-grid-match uk-grid-match yx-news-list-item">
                     <div class="uk-width-2-3">
                         <div class="uk-flex uk-flex-column uk-flex-between">
-                            <a href="#" title="数字化浪潮下，工控电脑一体机成物流仓库“效率担当”！" class="uk-link-text yx-news-list-title uk-text-decoration-none">
+                            <a target="_blank" href="/news/industry/102.html" title="数字化浪潮下，工控电脑一体机成物流仓库“效率担当”！" class="uk-link-text yx-news-list-title uk-text-decoration-none">
                                 <h3>数字化浪潮下，工控电脑一体机成物流仓库“效率担当”！</h3>
                                 <p class="uk-text-meta text-clamp-3 text-clamp-ellipsis">在自动化工厂里，不光是机器人在干活，屏幕也没闲着。生产数据、设备状态、工艺流程，全靠一块好用的工业级显示器把这些信息准确稳定地展示出来。如果屏幕不稳定，操作员再熟练也没辙。现场节奏快、环境复杂，对显示...</p>
                             </a>
@@ -98,7 +98,7 @@
                 <div uk-grid class="uk-grid-match uk-grid-match yx-news-list-item">
                     <div class="uk-width-2-3">
                         <div class="uk-flex uk-flex-column uk-flex-between">
-                            <a href="#" title="工业4.0时代，研显触控如何用定制工控一体机适配不同行业场景？" class="uk-link-text yx-news-list-title uk-text-decoration-none">
+                            <a target="_blank" href="/news/industry/102.html" title="工业4.0时代，研显触控如何用定制工控一体机适配不同行业场景？" class="uk-link-text yx-news-list-title uk-text-decoration-none">
                                 <h3>工业4.0时代，研显触控如何用定制工控一体机适配不同行业场景？</h3>
                                 <p class="uk-text-meta text-clamp-3 text-clamp-ellipsis">在自动化工厂里，不光是机器人在干活，屏幕也没闲着。生产数据、设备状态、工艺流程，全靠一块好用的工业级显示器把这些信息准确稳定地展示出来。如果屏幕不稳定，操作员再熟练也没辙。现场节奏快、环境复杂，对显示...</p>
                             </a>
@@ -129,7 +129,7 @@
                 <div uk-grid class="uk-grid-match uk-grid-match yx-news-list-item">
                     <div class="uk-width-2-3">
                         <div class="uk-flex uk-flex-column uk-flex-between">
-                            <a href="#" title="工业触摸屏闯进智能家居领域，普通屏幕只能“靠边站”？" class="uk-link-text yx-news-list-title uk-text-decoration-none">
+                            <a target="_blank" href="/news/industry/102.html" title="工业触摸屏闯进智能家居领域，普通屏幕只能“靠边站”？" class="uk-link-text yx-news-list-title uk-text-decoration-none">
                                 <h3>工业触摸屏闯进智能家居领域，普通屏幕只能“靠边站”？</h3>
                                 <p class="uk-text-meta text-clamp-3 text-clamp-ellipsis">在自动化工厂里，不光是机器人在干活，屏幕也没闲着。生产数据、设备状态、工艺流程，全靠一块好用的工业级显示器把这些信息准确稳定地展示出来。如果屏幕不稳定，操作员再熟练也没辙。现场节奏快、环境复杂，对显示...</p>
                             </a>
