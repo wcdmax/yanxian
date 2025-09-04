@@ -1270,7 +1270,7 @@
     border: 1px solid var(--theme-color);
 }
 
-.yk-prod-gallery-magnifier {
+.yx-prod-gallery-magnifier {
     top: 0;
     left: 100%;
     z-index: 100;
@@ -1632,4 +1632,93 @@
 .yx-suggest-item[data-number="4"]::before,
 .yx-suggest-item[data-number="5"]::before {
     background: linear-gradient(135deg, #ffb700 0%, #ffa500 100%);
+}
+
+/* 上/下篇文章 */
+.yx-part-article-prev:hover,
+.yx-part-article-next:hover {
+    text-decoration: none;
+    color: var(--theme-color);
+}
+
+.yx-part-article-prev:hover>[uk-icon] {
+    transform: translateX(-5px);
+}
+
+.yx-part-article-next:hover>[uk-icon] {
+    transform: translateX(5px);
+}
+
+.yx-part-article-prev>[uk-icon],
+.yx-part-article-next>[uk-icon] {
+    transition: transform 0.3s ease-in-out;
+}
+
+.yx-part-article-prev,
+.yx-part-article-next {
+    color: var(--text-color-default);
+}
+
+/* 文章内容部分 */
+.yx-article-meta-item::before {
+    height: 1em;
+}
+
+.yx-article-meta-tags [uk-icon] {
+    color: var(--text-color-primary);
+}
+
+.yx-article-meta-item [uk-icon] {
+    margin-right: 5px;
+    color: var(--text-color-primary);
+}
+
+.yx-article-meta-tags [uk-icon] {
+    vertical-align: text-top;
+}
+
+.yx-article-meta-item-text {
+    color: var(--text-color-default);
+}
+
+.yx-article-meta-item-text a:hover {
+    color: var(--text-color-primary);
+}
+
+.yx-article-meta-item-text a {
+    text-decoration: none;
+    color: var(--text-color-default);
+}
+
+.yx-article-content>img {
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.yx-article-content a {
+    color: var(--theme-color);
+}
+
+.yx-article-content>p,
+.yx-article-content>ul,
+.yx-article-content>ol {
+    color: var(--text-color-default);
+}
+
+.yx-article-content .wp-block-heading {
+    margin-top: unset;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.yx-article-content .wp-block-heading::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: static;
+    margin-top: -3px;
+    margin-right: 4px;
+    display: inline-block;
+    background-size: cover;
+    background: url("data:image/svg+xml,%3Csvg t='1745310133951' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='5734' width='16' height='16'%3E%3Cpath d='M231.253333 929.28a25.173333 25.173333 0 0 1-25.173333-25.173333V119.893333a25.173333 25.173333 0 0 1 39.68-20.48l561.066667 392.106667a25.173333 25.173333 0 0 1 0 42.666667L245.76 924.586667a25.173333 25.173333 0 0 1-14.506667 4.693333z' fill='%23214e91' p-id='5735'%3E%3C/path%3E%3C/svg%3E") no-repeat 50%;
 }
