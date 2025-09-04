@@ -1,16 +1,18 @@
 <div uk-grid class="uk-grid-small">
     <div class="uk-width-1-4">
-        <div class="uk-margin">
-            <?php
-            set_query_var('search_placeholder', '搜索产品');
-            echo do_blocks('<!-- wp:pattern {"slug":"yanxian/search"} /-->');
-            ?>
-        </div>
-        <div class="uk-margin uk-margin-remove-top">
-            <?php echo do_blocks('<!-- wp:pattern {"slug":"yanxian/filter"} /-->'); ?>
-        </div>
-        <div>
-            <?php echo do_blocks('<!-- wp:pattern {"slug":"yanxian/tags"} /-->'); ?>
+        <div uk-grid class="uk-grid-small uk-child-width-1-1">
+            <div>
+                <?php
+                set_query_var('search_placeholder', '搜索产品');
+                echo do_blocks('<!-- wp:pattern {"slug":"yanxian/search"} /-->');
+                ?>
+            </div>
+            <div>
+                <?php echo do_blocks('<!-- wp:pattern {"slug":"yanxian/filter"} /-->'); ?>
+            </div>
+            <div>
+                <?php echo do_blocks('<!-- wp:pattern {"slug":"yanxian/tags"} /-->'); ?>
+            </div>
         </div>
     </div>
     <div class="uk-width-3-4">
