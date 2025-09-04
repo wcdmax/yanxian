@@ -53,6 +53,38 @@
         </div>
     </div>
     <!-- 产品信息 Start -->
-    <div></div>
-    <!-- 产品信息 End -->
-</div>
+    <div>
+        <div class="uk-border-rounded uk-background-default yx-prod-info">
+            <h3 uk-scrollspy="cls: uk-animation-scale-up; delay: 100;"><?php the_title(); ?></h3>
+            <ul class="uk-subnav yx-prod-tags" uk-scrollspy="cls: uk-animation-slide-top-small; target: > li; delay: 100">
+                <li><span>源头工厂</span></li>
+                <li><span>现货速发</span></li>
+                <li><span>支持定制</span></li>
+                <li><span>超窄边框</span></li>
+                <li><span>可开专票</span></li>
+            </ul>
+            <p class="uk-text-meta text-clamp-2 text-clamp-ellipsis" uk-scrollspy="cls: uk-animation-fade; delay: 300;">研显触控G1A嵌入式工业触控一体机采用超窄边框设计，颜值更高。并且具有IP65级别的防尘防水，抗电磁干扰，兼容嵌入、壁挂、桌面的多种安装方式。全金属机身，坚固耐磨。</p>
+            <hr>
+            <h5>产品特色</h5>
+            <ul class="yx-prod-special-list" uk-scrollspy="cls: uk-animation-slide-left-small; target: > li; delay: 100;">
+                <li><span>支持模块接口定制</span></li>
+                <li><span>耐高温低温、抗腐蚀</span></li>
+                <li><span>电容触摸屏，更灵敏</span></li>
+                <li><span>全封闭式防尘防震设计</span></li>
+                <li><span>实力工厂，更具性价比</span></li>
+                <li><span>全封闭铝合金机身，一体成型</span></li>
+            </ul>
+            <ul class="yx-prod-cert-list" uk-scrollspy="cls: uk-animation-scale-up; target: > li; delay: 100;">
+                <li><img src="//static.yxtouch.com/assets/icons/ccc.png" alt="3C认证" srcset=""></li>
+                <li><img src="//static.yxtouch.com/assets/icons/ce.png" alt="CE认证" srcset=""></li>
+                <li><img src="//static.yxtouch.com/assets/icons/fcc.png" alt="FCC认证" srcset=""></li>
+                <li><img src="//static.yxtouch.com/assets/icons/iso.png" alt="ISO认证" srcset=""></li>
+                <li><img src="//static.yxtouch.com/assets/icons/rohs.png" alt="RoHS认证" srcset=""></li>
+            </ul>
+            <div class="yx-prod-actions">
+                <button class="uk-button uk-border-rounded yx-button-primary" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 200;"><span uk-icon="calendar"></span> 免费借测</button>
+                <button class="uk-button uk-border-rounded yx-button-danger uk-margin-small-left" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 200;"><span uk-icon="cart"></span> 获取报价</button>
+            </div>
+        </div>
+        <!-- 产品信息 End -->
+    </div>

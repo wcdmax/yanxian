@@ -37,7 +37,6 @@
     display: -webkit-box !important
 }
 
-
 .yx-form-error.show {
     display: block;
 }
@@ -61,6 +60,18 @@
     transition: transform .3s ease-in-out;
 }
 
+.yx-button-danger {
+    color: white;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(90deg, #f85032 0%, #f0506e 100%);
+}
+
+.yx-button-danger:hover {
+    color: white;
+    box-shadow: 0 4px 24px rgba(248, 80, 50, 0.35);
+}
+
 .yx-button-primary:hover {
     color: white;
     box-shadow: var(--yx-box-shadow);
@@ -73,7 +84,7 @@
     background: var(--yx-linear-gradient);
 }
 
-.yx-button-primary:hover::before {
+.yx-button-primary:hover::before, .yx-button-danger:hover::before {
     z-index: 1;
     animation: btn-wave 1.5s infinite;
 }
@@ -96,7 +107,8 @@
     animation: yx-animation 30s infinite;
 }
 
-.yx-button-primary::before {
+.yx-button-primary::before,
+.yx-button-danger::before {
     top: 50%;
     height: 0;
     left: 50%;
@@ -1334,4 +1346,98 @@
     position: absolute;
     transform: translate(-50%, -50%);
     background: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="rgba(0,0,0,0.5)"/><polygon points="10,8 16,12 10,16" fill="white"/></svg>') no-repeat center center / contain;
+}
+
+/* 产品概览部分 */
+.yx-prod-info h5 {
+    display: flex;
+    margin: 0 0 10px;
+    align-items: center;
+}
+
+.yx-prod-actions {
+    margin-top: 4.5rem;
+}
+
+.yx-prod-actions .yx-button-danger>span {
+    vertical-align: text-bottom;
+}
+
+.yx-prod-actions .yx-button-primary>span {
+    vertical-align: text-top;
+}
+
+.yx-prod-info h5::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(//static.yxtouch.com/assets/icons/special.png);
+}
+
+.yx-prod-special-list {
+    margin-top: unset;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.yx-prod-special-list li {
+    cursor: pointer;
+    padding-left: 5px;
+    line-height: 30px;
+    font-size: .875rem;
+    position: relative;
+    width: fit-content;
+    color: var(--text-color-default);
+}
+
+.yx-prod-special-list li:hover span {
+    color: var(--theme-color);
+    transform: translateX(5px);
+}
+
+.yx-prod-special-list li span {
+    display: inline-block;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.yx-prod-cert-list>li>img {
+    width: 30px;
+    height: 30px;
+}
+
+.yx-prod-cert-list {
+    gap: 10px;
+    display: flex;
+    padding-left: unset;
+    flex-flow: row nowrap;
+    justify-content: start;
+}
+
+.yx-prod-cert-list li:hover {
+    transform: translateY(-5px);
+}
+
+.yx-prod-cert-list li {
+    padding: 5px;
+    list-style: none;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    transition: transform 0.3s ease-in-out;
+}
+
+.yx-prod-special-list>li::before {
+    left: -20px;
+    content: '';
+    width: 20px;
+    bottom: 5px;
+    height: 20px;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg t='1745653166839' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='5001' width='20' height='20'%3E%3Cpath d='M512 64C264.8 64 64 264.8 64 512s200.8 448 448 448 448-200.8 448-448S759.2 64 512 64zM428 718.4l-45.6 45.6-45.6-45.6-116-117.6 45.6-45.6L383.2 672l367.2-367.2 45.6 45.6-368 368z' p-id='5002' fill='%23214e91'%3E%3C/path%3E%3C/svg%3E");
 }
