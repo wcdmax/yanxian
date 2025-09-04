@@ -82,8 +82,8 @@
                 <li><img src="//static.yxtouch.com/assets/icons/rohs.png" alt="RoHS认证" srcset=""></li>
             </ul>
             <div class="yx-prod-actions">
-                <button class="uk-button uk-border-rounded yx-button-primary" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 200;"><span uk-icon="calendar"></span> 免费借测</button>
-                <button class="uk-button uk-border-rounded yx-button-danger uk-margin-small-left" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 200;"><span uk-icon="cart"></span> 获取报价</button>
+                <button class="uk-button uk-border-rounded yx-button-primary yx-message-container" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 200;"><span uk-icon="calendar"></span> 免费借测</button>
+                <button class="uk-button yx-sidebar-online uk-border-rounded yx-button-danger uk-margin-small-left" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 200;"><span uk-icon="cart"></span> 获取报价</button>
             </div>
         </div>
         <!-- 产品信息 End -->
