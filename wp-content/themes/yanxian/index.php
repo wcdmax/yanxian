@@ -244,10 +244,10 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img alt="研显深化国产芯片应用实践，强化工业一体机本土方案能力" src="//static.yxtouch.com/assets/images/news_3.jpg">
+                            <img alt="工业触摸屏闯进智能家居领域，普通屏幕只能“靠边站”？" src="//static.yxtouch.com/assets/images/news_3.jpg">
                             <div class="swiper-slide-overlay uk-position-medium uk-position-bottom-center">
                                 <p class="ani uk-text-meta" swiper-animate-effect="fadeInDown" swiper-animate-delay="0.3s">2025-08-30</p>
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.5s">研显深化国产芯片应用实践，强化工业一体机本土方案能力</h3>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="0.5s">工业触摸屏闯进智能家居领域，普通屏幕只能“靠边站”？</h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
