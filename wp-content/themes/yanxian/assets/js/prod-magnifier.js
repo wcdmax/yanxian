@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const bgY = (y / rect.height) * 100;
 
         // 设置放大镜背景
-        const magnifier = document.querySelector('.yk-prod-gallery-magnifier');
+        const magnifier = document.querySelector('.yx-prod-gallery-magnifier');
         magnifier.style.backgroundPosition = `${bgX}% ${bgY}%`;
         magnifier.style.backgroundImage = `url(${img.src})`;
         magnifier.style.backgroundSize = `${rect.width * 2}px ${rect.height * 2}px`;
@@ -113,13 +113,13 @@ document.addEventListener('DOMContentLoaded', function () {
     bigImageContainer.addEventListener('mouseenter', function () {
         const img = bigImageContainer.querySelector('img');
         if (!img) return;
-        const magnifier = document.querySelector('.yk-prod-gallery-magnifier');
+        const magnifier = document.querySelector('.yx-prod-gallery-magnifier');
         magnifier.style.display = 'block';
     });
 
     // 鼠标离开时隐藏放大镜
     bigImageContainer.addEventListener('mouseleave', function () {
-        const magnifier = document.querySelector('.yk-prod-gallery-magnifier');
+        const magnifier = document.querySelector('.yx-prod-gallery-magnifier');
         magnifier.style.display = 'none';
     });
 

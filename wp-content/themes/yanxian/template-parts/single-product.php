@@ -49,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            <div class="yk-prod-gallery-magnifier"></div>
+            <div class="yx-prod-gallery-magnifier"></div>
         </div>
     </div>
     <!-- 产品信息 Start -->
