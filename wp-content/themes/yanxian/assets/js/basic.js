@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
  * @param formId string 表单id
  */
 const render_province_city_district_selector = (formId = '#form') => {
-    console.log('formId:', formId);
     const city = document.querySelector(`${formId} select[name="city"]`);
     const province = document.querySelector(`${formId} select[name="province"]`);
     const district = document.querySelector(`${formId} select[name="district"]`);
