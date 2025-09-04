@@ -13,10 +13,10 @@ require_once 'sms-aliyun-class.php';
 // 初始化选项
 register_activation_hook(__FILE__, function () {
     add_option('sms_aliyun_options', [
-        'type' => 'access_key',
-        'endpoint' => 'dysmsapi.aliyuncs.com',
         'accessKeyId' => '',
+        'type' => 'access_key',
         'accessKeySecret' => '',
+        'endpoint' => 'dysmsapi.aliyuncs.com'
     ]);
 });
 
