@@ -19,11 +19,14 @@ if (!empty($categories) && isset($categories[0])) {
     <meta name="description" content="研显触摸是集工控一体机、工业触摸屏、工业级主机研发、生产、销售于一体的高新技术企业。">
     <link rel="stylesheet" href="<?php echo get_theme_file_uri('/assets/css/basic.css'); ?>">
     <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/basic.js'); ?>"></script>
+    <?php if (is_page('about')): ?>
+        <script language="javascript" type="text/javascript" src="<?php echo get_theme_file_uri('/assets/js/about.js'); ?>"></script>
+    <?php endif; ?>
     <?php if (is_front_page()): ?>
         <script type="text/javascript" language="javascript" src="<?php echo get_theme_file_uri('/assets/js/index.js'); ?>"></script>
     <?php endif; ?>
     <?php if (is_single() && $top_category && $top_category->slug === 'product'): ?>
-    <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/prod-magnifier.js'); ?>"></script>
+        <script type="text/javascript" lang="javascript" src="<?php echo get_theme_file_uri('/assets/js/prod-magnifier.js'); ?>"></script>
     <?php endif; ?>
     <script type="text/javascript" lang="javascript" src="//static.yxtouch.com/assets/js/uikit.min.js"></script>
     <script type="text/javascript" lang="javascript" src="//static.yxtouch.com/assets/js/uikit-icons.min.js"></script>
