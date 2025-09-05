@@ -1722,3 +1722,105 @@
     background-size: cover;
     background: url("data:image/svg+xml,%3Csvg t='1745310133951' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='5734' width='16' height='16'%3E%3Cpath d='M231.253333 929.28a25.173333 25.173333 0 0 1-25.173333-25.173333V119.893333a25.173333 25.173333 0 0 1 39.68-20.48l561.066667 392.106667a25.173333 25.173333 0 0 1 0 42.666667L245.76 924.586667a25.173333 25.173333 0 0 1-14.506667 4.693333z' fill='%23214e91' p-id='5735'%3E%3C/path%3E%3C/svg%3E") no-repeat 50%;
 }
+
+/* 关于我们部分 */
+#aboutSwiper {
+    --swiper-navigation-size: 26px;
+    --swiper-theme-color: var(--theme-color);
+}
+
+.yx-about-slide {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.yx-about-advantage {
+    border-radius: 20px;
+}
+
+.yx-about-slide div.uk-overlay {
+    padding: 20px;
+    color: white;;
+}
+
+.yx-about-slide div.uk-overlay p {
+    margin: unset;
+}
+
+.yx-about-advantage-item p {
+    margin: unset;
+    transition: color 0.3s ease;
+    color: var(--text-color-default);
+}
+
+.yx-about-advantage-item:hover p {
+    color: var(--text-color-primary);
+}
+
+.yx-about-advantage-item img {
+    transition: filter 0.3s ease;
+}
+
+.yx-about-advantage-item:hover img {
+    filter: brightness(0) saturate(100%) sepia(1) hue-rotate(-170deg) saturate(600%) brightness(0.9);
+}
+
+.yx-about-culture-left,
+.yx-about-culture-right {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.yx-about-culture-left {
+    height: 500px;
+}
+
+.yx-about-culture-right {
+    height: 242.5px;
+}
+
+.yx-about-culture-left:hover,
+.yx-about-culture-right:hover {
+    background-size: 110% 110%;
+}
+
+.yx-about-culture-left p,
+.yx-about-culture-right p {
+    opacity: 0;
+    margin: unset;
+    transform: translateY(72px);
+    transition: transform 0.3s ease;
+}
+
+.yx-about-culture-left h3,
+.yx-about-culture-right h3 {
+    color: white;
+    margin-bottom: 10px;
+    transform: translateY(24px);
+    transition: transform 0.3s ease;
+}
+
+.yx-about-culture-left:hover p,
+.yx-about-culture-right:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.yx-about-culture-left:hover h3,
+.yx-about-culture-right:hover h3 {
+    transform: translateY(0);
+}
+
+.yx-about-culture-left,
+.yx-about-culture-right {
+    background-size: 100% 100%;
+    transition: background-size .5s ease;
+}
+
+.yx-about-culture-left>div,
+.yx-about-culture-right>div {
+    width: 100%;
+    color: white;
+    padding: 20px 30px;
+    background: linear-gradient(to bottom, transparent 10%, rgba(33, 78, 145, .8) 100%);
+}
